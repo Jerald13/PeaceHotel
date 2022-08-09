@@ -1027,21 +1027,21 @@ span.TextContentspan {
 
 button.btn1 {
     display: inline-block;
-    padding-bottom: 2px;
+    padding-bottom: 5px;
     background-image: linear-gradient(#000, #000);
     background-position: 0 100%;
-    /*OR bottom left*/
     background-size: 0% 2px;
     background-repeat: no-repeat;
     transition: background-size 0.5s, background-position 0s 0.5s;
     font-family: Arial, Helvetica, sans-serif;
-    padding-bottom: 20px;
+    /* padding-bottom: 20px; */
     font-weight: 600;
     letter-spacing: 2px;
     font-size: 11px;
+    margin-bottom: 8px;
 }
 
-button.btn1 {
+button.btn1:hover {
     background-position: 100% 100%;
     /*OR bottom right*/
     background-size: 100% 2px;
@@ -1716,6 +1716,12 @@ button.btn1 {
     footer .payment {
         grid-template-columns: repeat(4, 1fr);
     }
+
+    .TextContent {
+        position: relative;
+        margin-top: 228px;
+    }
+
 }
 
 
