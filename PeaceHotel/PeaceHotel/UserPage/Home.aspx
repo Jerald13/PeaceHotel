@@ -22,7 +22,7 @@
 
     <link rel="stylesheet" href="./assets/css/style.css">
 
-
+     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- 
     - google font link
   -->
@@ -70,11 +70,11 @@
                 <ul class="navbar-list">
 
                     <li class="navbar-item">
-                        <a href="#en" class="navbar-link" aria-haspopup="listbox" aria-expanded="false" class="SHh" data-navbar-link><i class="fa fa-phone"></i></a>
+                        <a href="#footer" class="navbar-link" aria-haspopup="listbox" aria-expanded="false" class="SHh" data-navbar-link><i class="fa fa-phone"></i></a>
                     </li>
 
                     <li class="navbar-item">
-                        <a href="#about" class="navbar-link" data-navbar-link><i class="fa fa-envelope"></i></a>
+                        <a href="#footer" class="navbar-link" data-navbar-link><i class="fa fa-envelope"></i></a>
                     </li>
 
                     <li class="navbar-item">
@@ -83,7 +83,11 @@
                     </li>
 
                     <li class="navbar-item">
-                        <a href="#features" class="navbar-link" data-navbar-link><span id="navText">SIGNUP</span></a>
+                        <%--<a href="#features" class="navbar-link" data-navbar-link><span id="navText">SIGNUP</span></a>--%>
+                        <a href="#features" class="navbar-link" data-navbar-link><span id="navText">LEE</span></a>
+
+
+
                     </li>
 
 
@@ -169,19 +173,19 @@
 
             <!-- Book -->
             
-    <form id="form1" runat="server">
+        <form id="form1" runat="server">
 
             <section class="book">
                 <div class="Bookcontainer flex">
                     <div class="input grid">
                         <div class="box">
                             <label>CHECK-IN</label>&nbsp;
-                    <asp:TextBox ID="checkInDate" runat="server" Text='<%# Bind("DateofBirth") %>' TextMode="Date" OnTextChanged="checkInDate_TextChanged"></asp:TextBox>
+                    <asp:TextBox ID="checkInDate" runat="server" TextMode="Date" OnTextChanged="checkInDate_TextChanged"></asp:TextBox>
                             <br />
                         </div>
                         <div class="box">
                             <label>CHECK-OUT</label>
-                              <asp:TextBox ID="checkOutDate" runat="server" Text='<%# Bind("DateofBirth") %>' TextMode="Date" OnTextChanged="checkInDate_TextChanged"></asp:TextBox>
+                              <asp:TextBox ID="checkOutDate" runat="server"  TextMode="Date" OnTextChanged="checkInDate_TextChanged"></asp:TextBox>
                         </div>
                         <div class="box">
                             <label>ADULTS</label> <br>
@@ -193,12 +197,17 @@
                         </div>
                     </div>
                     <div class="search">
-                        <input type="submit" value="CHECK AVAILABILITY">
+                       <%-- <input type="submit" runat="server" value="CHECK AVAILABILITY">--%>
+                         <asp:Button type="submit" ID="Button2" runat="server" Text="CHECK AVAILABILITY" OnClick="Button2_Click"
+                        />
+                        <br />
+                        <asp:Label ID="Label1" runat="server"></asp:Label>
                     </div>
                 </div>
             </section>
 
         </form>
+
 
 
     
@@ -208,7 +217,7 @@
 
               <!-- Text -->
 
-                    <div class="TextContent">
+                    <div class="TextContent"  >
                 <span class="TextContentspan">
                 <h1>
                     IN THE HEART OF PEACE PLACE
@@ -223,7 +232,7 @@
 
            <%--RoomSlide--%>
 
-             <section class="room top" id="room">
+             <section class="room top" id="room"  data-aos="fade-up" data-aos-offset="-400"  data-aos-easing="ease-in" data-aos-once="true">
     <div class="Roomcontainer">
       <div class="heading_top flex1">
         <div class="heading">
@@ -281,11 +290,11 @@
               <%--CustoemrReview--%>
 
 
-                <div class="wrapperReview">
-        <div class="boxReview">
+                <div class="wrapperReview"  data-aos="fade-up" data-aos-offset="-400" data-aos-once="true" data-aos-easing="ease-in">
+        <div class="boxReview" >
             <i class="fas fa-quote-left quote"></i>
           <p>Pretty cool place and relax </p>
-            <div class="contentReview">
+            <div class="contentReview"  >
                 <div class="info">
                     <div class="name">Alex Smith</div>
                     <div class="stars">
@@ -342,7 +351,7 @@
     - #FOOTER
   -->
 
-    <footer class="footer">
+    <footer class="footer" id="footer" >
 
         <div class="footer-top section">
             <div class="container">
@@ -495,7 +504,25 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
 
+            <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+      <script>
+          document.querySelector('html').classList.remove('no-js');
+          if (!window.Cypress) {
+              const scrollCounter = document.querySelector('.js-scroll-counter');
 
+              AOS.init({
+                  mirror: true
+              });
+
+              document.addEventListener('aos:in', function (e) {
+                  console.log('in!', e.detail);
+              });
+
+              window.addEventListener('scroll', function () {
+                  scrollCounter.innerHTML = window.pageYOffset;
+              });
+          }
+      </script>
 
 
 

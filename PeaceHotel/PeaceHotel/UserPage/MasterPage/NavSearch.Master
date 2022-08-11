@@ -1,0 +1,238 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="NavSearch.Master.cs" Inherits="PeaceHotel.UserPage.Site1" %>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peace</title>
+
+    <!-- 
+    - favicon
+  -->
+    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+    <!-- 
+    - custom css link
+  -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <link rel="stylesheet" href="../UserPage/assets/css/style.css">
+
+
+    <!-- 
+    - google font link
+  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Source+Sans+Pro:wght@600;700&display=swap" rel="stylesheet">
+</head>
+
+
+
+<!-- <div class="annoucement">
+    <p>Convid-19 Update <span style="display:inline;"><a href="#" style="display:inline;text-decoration: underline;">Detail</a></span></p>
+</div> -->
+
+<body id="top">
+
+    
+
+
+    
+
+    <!-- 
+    - #HEADER
+  -->
+
+    <header class="header" data-header>
+        <div class="container">
+
+            <div class="overlay" data-overlay></div>
+
+            <button class="nav-open-btn" aria-label="Open Menu" data-nav-open-btn>
+              <ion-icon name="menu-outline"></ion-icon>
+            </button>
+
+            <nav class="navbar" data-navbar>
+
+                <div class="navbar-top">
+                    <a href="#" class="logo">Peace</a>
+
+                    <button class="nav-close-btn" aria-label="Close Menu" data-nav-close-btn>
+            <ion-icon name="close-outline"></ion-icon>
+          </button>
+                </div>
+
+                <ul class="navbar-list">
+
+                    <li class="navbar-item">
+                        <a href="#en" class="navbar-link" aria-haspopup="listbox" aria-expanded="false" class="SHh" data-navbar-link><i class="fa fa-phone"></i></a>
+                    </li>
+
+                    <li class="navbar-item">
+                        <a href="#about" class="navbar-link" data-navbar-link><i class="fa fa-envelope"></i></a>
+                    </li>
+
+                    <li class="navbar-item">
+                        <a href="#services" class="navbar-link" data-navbar-link><span id="navText">ROOMS</span></a>
+
+                    </li>
+
+                    <li class="navbar-item">
+                        <a href="#features" class="navbar-link" data-navbar-link><span id="navText">SIGNUP</span></a>
+                    </li>
+
+
+                </ul>
+
+            </nav>
+
+            <a href="#">
+                <h1 class="logo">Peace</h1>
+            </a>
+
+            <a href="#" class="btn">
+                <!-- <ion-icon name="chevron-forward-outline" aria-hidden="true"></ion-icon> -->
+
+                <span>Book Now</span>
+            </a>
+
+
+
+        </div>
+    </header>
+
+
+
+
+
+    <main>
+        <article>
+
+            <!-- 
+        - #HERO
+      -->
+
+             <%--<div id="full-screen" class="full-screen">
+                <video src="../UserPage/assets/images/hotelvideo.mp4" id="video" class="video" autoplay muted></video>
+            </div> --%>
+
+
+
+
+            <!-- <section class="hero" id="slide"> -->
+            <section id="slide">
+                <div class="slider">
+                    <div class="slide active">
+                        <img src="../UserPage/assets/images/Slide1.jpg" alt="">
+                        <div class="info">
+                            <h2>SPECIOUS RETREATS</h2>
+                            <span class="slideText"><p>Dive into summer at Peace’s luxurious, nature-blessed resorts, where expansive villas embrace stunning indoor-outdoor living for memorable moments..</p></span>
+                            <button class="btn" onclick="playVid()" type="button">Play video</button>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="../UserPage/assets/images/Slide2.jpg" alt="">
+                        <div class="info">
+                            <h2>SPECIOUS RETREATS</h2>
+                            <span class="slideText"><p>Dive into summer at Peace’s luxurious, nature-blessed resorts, where expansive villas embrace stunning indoor-outdoor living for memorable moments..</p></span>
+                            <button class="btn" type="button">Book Now</button>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="../UserPage/assets/images/Slide.jpg" alt="">
+                        <div class="info">
+                            <h2>SPECIOUS RETREATS</h2>
+                            <span class="slideText"><p>Dive into summer at Peace’s luxurious, nature-blessed resorts, where expansive villas embrace stunning indoor-outdoor living for memorable moments..</p></span>
+                            <button class="btn" type="button">Rooms</button>
+                        </div>
+                    </div>
+
+                    <div class="navigation">
+                        <i class="fas fa-chevron-left prev-btn"></i>
+                        <i class="fas fa-chevron-right next-btn"></i>
+                    </div>
+                    <div class="navigation-visibility">
+                        <div class="slide-icon active"></div>
+                        <div class="slide-icon"></div>
+                        <div class="slide-icon"></div>
+
+                    </div>
+                </div>
+            </section>
+            <!-- </section> -->
+
+
+            <!-- Book -->
+            
+    <form id="form1" runat="server">
+
+            <section class="book">
+                <div class="Bookcontainer flex">
+                    <div class="input grid">
+                        <div class="box">
+                            <label>CHECK-IN</label>&nbsp;
+                    <asp:TextBox ID="checkInDate" runat="server" TextMode="Date" OnTextChanged="checkInDate_TextChanged"></asp:TextBox>
+                            <br />
+                        </div>
+                        <div class="box">
+                            <label>CHECK-OUT</label>
+                              <asp:TextBox ID="checkOutDate" runat="server"  TextMode="Date" OnTextChanged="checkInDate_TextChanged"></asp:TextBox>
+                        </div>
+                        <div class="box">
+                            <label>ADULTS</label> <br>
+                            <input type="number" id="adults" runat="server" min="0" max="8" placeholder="0">
+                        </div>
+                        <div class="box">
+                            <label>CHILDREN</label> <br>
+                            <input type="number" id="children" runat="server" min="0" max="8" placeholder="0">
+                        </div>
+                    </div>
+                    <div class="search">
+                       <%-- <input type="submit" runat="server" value="CHECK AVAILABILITY">--%>
+                         <asp:Button type="submit" ID="Button2" runat="server" Text="CHECK AVAILABILITY" OnClick="Button2_Click"
+                        />
+                        <br />
+                        <asp:Label ID="Label1" runat="server"></asp:Label>
+                    </div>
+                </div>
+            </section>
+
+        </form>
+
+
+    
+
+            <!-- Book -->
+
+
+
+
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+    </asp:ContentPlaceHolder>
+
+
+
+
+
+
+                <!-- 
+    - #GO TO TOP
+  -->
+
+    <a href="#top" class="go-top  active" aria-label="Go To Top" data-go-top>
+        <ion-icon name="arrow-up-outline"></ion-icon>
+    </a>
+
+
+
+
+
+    <!-- 
+    - custom js link
+  -->
+    <script src="../UserPage/assets/js/navSlide.js">
