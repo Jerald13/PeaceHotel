@@ -272,6 +272,181 @@ body {
 
 
 /*-----------------------------------*\
+  #AccDropdown
+\*-----------------------------------*/
+
+
+
+/*.menu-button {
+    background-color: #000;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    cursor: pointer;
+    border: 1px solid #fff;
+}
+
+.right-menu {
+    position: relative;
+    display: inline-block;
+    float: right;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: Opx 8px 16px 6px rgba(0,0,0,0.2);
+    z-index: 999;
+}
+
+    .dropdown-menu a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+dropdown-menu a:hover {
+    background: #000 !important;
+    color: #000;
+    display:block;
+}
+
+right-menu:hover .dropdown-menu {
+    display: block;
+}
+
+.right-menu:hover .menu-button {
+    background: #000;
+}*/
+
+.navbarAcc {
+    display: block;
+}
+
+    .navbarAcc .logo a {
+        display: block;
+        text-decoration: none;
+        color: #fff;
+        font-weight: 700;
+        letter-spacing: 2px;
+        font-size: 25px;
+        text-transform: uppercase;
+    }
+
+    .navbarAcc .nav_right > ul {
+        display: block;
+        align-items: center;
+    }
+
+    .navbarAcc .nav_right ul li.nr_li {
+        /*margin-left: 25px;*/
+        cursor: pointer;
+        color: #fff;
+        font-size: 20px;
+        position: relative;
+    }
+
+        .navbarAcc .nav_right ul li.nr_li:hover dd.menu {
+            color: #cefffc;
+            display: block;
+        }
+
+    .navbarAcc .nav_right ul li img {
+        width: 35px;
+        vertical-align: middle;
+    }
+    .navbarAcc .dd_menu {
+        content: "";
+        position: absolute;
+        right: -106px;
+        top: 44px;
+        display: block;
+        background: #fff;
+        border-radius: 15px;
+        box-shadow: 0px 0px 3px rgb(0 0 0 / 25%);
+        display: none;
+    }
+
+        .navbarAcc .dd_menu .dd_left {
+            background: #74ded8;
+            padding: 15px 20px;
+            border-top-left-radius: 15px;
+            border-bottom-left-radius: 15px;
+        }
+
+            .navbarAcc .dd_menu .dd_left li {
+                color: #fff;
+                display: block
+            }
+
+        .navbarAcc .dd_menu .dd_right {
+            padding: 15px 20px;
+        }
+
+        .navbarAcc .dd_menu li {
+            margin-bottom: 10px;
+            color: #868686;
+        }
+
+
+        .navbarAcc .dd_menu.space{
+            display:block;
+            height:60px;
+
+        }
+
+        .navbarAcc .dd_menu:before {
+          /*  content: "";
+            position: absolute;
+            top: -20px;
+            right: 30px;
+            border: 10px solid;
+            border-color: transparent transparent #fff transparent;*/
+            content: "";
+            position: absolute;
+            top: -20px;
+            right: 0px !important;
+            /*border: 10px solid;*/
+            border-color: transparent transparent #fff transparent;
+            width: 200px;
+            height: 100px;
+            display: block
+        }
+
+    .navbarAcc .dd_main:hover .dd_menu {
+        display: flex;
+    }
+
+
+/*    .navbarAcc .dd_menu .dd_right:before {
+        position: absolute;
+        bottom: -8px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: block;
+        width: 0;
+        height: 0;
+        border-color: transparent transparent #fff;
+        border-style: solid;
+        border-width: 0 8px 8px;
+        content: "";
+        z-index: 96;
+        opacity: 0;
+    }*/
+
+
+    .navbarAcc:after {
+      
+    }
+
+/*-----------------------------------*\
+  #AccDropdown
+\*-----------------------------------*/
+
+/*-----------------------------------*\
   #HEADER
 \*-----------------------------------*/
 
@@ -362,7 +537,6 @@ header:before {
         filter: brightness(75%);
         position: relative;
         z-index: 0;
-       
     }
 
 .header.active {
@@ -806,7 +980,7 @@ header:before {
     display: flex;
     justify-content: center;
     position: relative;
-/*    top: 8px !important;*/
+    /*    top: 8px !important;*/
     /* BACKGROUND: white; */
     /* color: #fff;*/
 }

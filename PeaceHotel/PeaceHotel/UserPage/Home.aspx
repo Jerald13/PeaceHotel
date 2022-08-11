@@ -84,8 +84,49 @@
 
                     <li class="navbar-item">
                         <%--<a href="#features" class="navbar-link" data-navbar-link><span id="navText">SIGNUP</span></a>--%>
-                        <a href="#features" class="navbar-link" data-navbar-link><span id="navText">LEE</span></a>
+                   <%--     <a href="#" class="navbar-link" data-navbar-link><span id="dd_main">LEE</span></a>--%>
 
+
+
+                        <%--Account Box--%>
+
+
+
+ 
+<div class="wrapperAcc">
+	<div class="navbarAcc">
+
+		<div class="nav_right">
+			<ul>
+				<li class="nr_li dd_main">
+				              <a  class="navbar-link" data-navbar-link><span id="navText">LEE</span></a>
+					
+					<div class="dd_menu">
+						<div class"space" style="content="";height=30px;" >
+						<div class="dd_right">
+                            <div class="imageAcc">
+                                <img src="./assets/images/Acc.jpg" alt="Flowers in Chania">
+                            </div>
+							<ul>
+								<li>Location</li>
+								<li>Favorites</li>
+								<li>Addpeople</li>
+								<li>Logout</li>
+							</ul>
+						</div>
+                            </div>
+					</div>
+				</li>
+			
+			</ul>
+		</div>
+	</div>
+</div>	
+
+
+                       
+
+                        <%--Account Box--%>
 
 
                     </li>
@@ -488,7 +529,6 @@
 
 
 
-
     <!-- 
     - custom js link
   -->
@@ -525,7 +565,14 @@
       </script>
 
 
+            
+            <script>
+                var dd_main = document.querySelector(".dd_main");
 
+                dd_main.addEventListener("click", function () {
+                    this.classList.toggle("active");
+                })
+            </script>
 
 
 

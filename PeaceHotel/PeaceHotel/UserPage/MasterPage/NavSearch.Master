@@ -169,40 +169,6 @@
 
             <!-- Book -->
             
-    <form id="form1" runat="server">
-
-            <section class="book">
-                <div class="Bookcontainer flex">
-                    <div class="input grid">
-                        <div class="box">
-                            <label>CHECK-IN</label>&nbsp;
-                    <asp:TextBox ID="checkInDate" runat="server" TextMode="Date" OnTextChanged="checkInDate_TextChanged"></asp:TextBox>
-                            <br />
-                        </div>
-                        <div class="box">
-                            <label>CHECK-OUT</label>
-                              <asp:TextBox ID="checkOutDate" runat="server"  TextMode="Date" OnTextChanged="checkInDate_TextChanged"></asp:TextBox>
-                        </div>
-                        <div class="box">
-                            <label>ADULTS</label> <br>
-                            <input type="number" id="adults" runat="server" min="0" max="8" placeholder="0">
-                        </div>
-                        <div class="box">
-                            <label>CHILDREN</label> <br>
-                            <input type="number" id="children" runat="server" min="0" max="8" placeholder="0">
-                        </div>
-                    </div>
-                    <div class="search">
-                       <%-- <input type="submit" runat="server" value="CHECK AVAILABILITY">--%>
-                         <asp:Button type="submit" ID="Button2" runat="server" Text="CHECK AVAILABILITY" OnClick="Button2_Click"
-                        />
-                        <br />
-                        <asp:Label ID="Label1" runat="server"></asp:Label>
-                    </div>
-                </div>
-            </section>
-
-        </form>
 
 
     
@@ -230,7 +196,13 @@
 
 
 
+            <script>
+                var dd_main = document.querySelector(".dd_main");
 
+                dd_main.addEventListener("click", function () {
+                    this.classList.toggle("active");
+                })
+            </script>
 
     <!-- 
     - custom js link

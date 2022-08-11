@@ -70,6 +70,7 @@
     <Content Include="AdminPage\Admin.aspx" />
     <Content Include="UserPage\assets\css\style.css" />
     <Content Include="UserPage\assets\images\about-banner.png" />
+    <Content Include="UserPage\assets\images\Acc.jpg" />
     <Content Include="UserPage\assets\images\blog-1.jpg" />
     <Content Include="UserPage\assets\images\blog-2.jpg" />
     <Content Include="UserPage\assets\images\blog-3.jpg" />
