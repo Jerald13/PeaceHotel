@@ -31,6 +31,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Source+Sans+Pro:wght@600;700&display=swap" rel="stylesheet">
 </head>
 
+ 
+    <style>
+        .header {
+    --color: #000 !important;
+    position:relative;
+}
+    </style>
 
 
 <!-- <div class="annoucement">
@@ -193,58 +200,7 @@
     <main>
         <article>
 
-            <!-- 
-        - #HERO
-      -->
-
-           <%--  <div id="full-screen" class="full-screen">
-                <video src="./assets/images/hotelvideo.mp4" id="video" class="video" autoplay muted></video>
-            </div> --%>
-
-
-
-
-            <!-- <section class="hero" id="slide"> -->
-            <section id="slide">
-                <div class="slider">
-                    <div class="slide active">
-                        <img src="./assets/images/Slide1.jpg" alt="">
-                        <div class="info">
-                            <h2>SPECIOUS RETREATS</h2>
-                            <span class="slideText"><p>Dive into summer at Peace's luxurious, nature-blessed resorts, where expansive villas embrace stunning indoor-outdoor living for memorable moments..</p></span>
-                            <button class="btn" onclick="playVid()" type="button">Play video</button>
-                        </div>
-                    </div>
-                    <div class="slide">
-                        <img src="./assets/images/Slide2.jpg" alt="">
-                        <div class="info">
-                            <h2>SPECIOUS RETREATS</h2>
-                            <span class="slideText"><p>Dive into summer at Peace’s luxurious, nature-blessed resorts, where expansive villas embrace stunning indoor-outdoor living for memorable moments..</p></span>
-                            <button class="btn" type="button">Book Now</button>
-                        </div>
-                    </div>
-                    <div class="slide">
-                        <img src="./assets/images/Slide.jpg" alt="">
-                        <div class="info">
-                            <h2>SPECIOUS RETREATS</h2>
-                            <span class="slideText"><p>Dive into summer at Peace’s luxurious, nature-blessed resorts, where expansive villas embrace stunning indoor-outdoor living for memorable moments..</p></span>
-                            <button class="btn" type="button">Rooms</button>
-                        </div>
-                    </div>
-
-                    <div class="navigation">
-                        <i class="fas fa-chevron-left prev-btn"></i>
-                        <i class="fas fa-chevron-right next-btn"></i>
-                    </div>
-                    <div class="navigation-visibility" style="top: 34px !important;">
-                        <div class="slide-icon active"></div>
-                        <div class="slide-icon"></div>
-                        <div class="slide-icon"></div>
-
-                    </div>
-                </div>
-            </section>
-            <!-- </section> -->
+           
 
 
            
@@ -256,6 +212,131 @@
 
 
 
+                <!-- 
+    - #FOOTER
+  -->
+
+    <footer class="footer" id="footer" >
+
+        <div class="footer-top section">
+            <div class="container">
+
+                <div class="footer-brand">
+
+                    <!-- <a href="#" class="logo">Desinic</a> -->
+
+                    <p class="text">
+                       Peace is a state of inner calm that the individual achieves which is not subjected to change.
+                    </p>
+
+                    <ul class="social-list">
+
+                        <li>
+                            <a href="#" class="social-link">
+                                <ion-icon name="logo-facebook"></ion-icon>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="social-link">
+                                <ion-icon name="logo-instagram"></ion-icon>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="social-link">
+                                <ion-icon name="logo-twitter"></ion-icon>
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+                <ul class="footer-list">
+
+                    <li>
+                        <p class="footer-list-title">Our links</p>
+                    </li>
+
+                    <li>
+                        <a href="#" class="footer-link">Home</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="footer-link">About Us</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="footer-link">Rating</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="footer-link">Booking</a>
+                    </li>
+
+                  
+
+                </ul>
+
+              
+
+                <ul class="footer-list">
+
+                    <li>
+                        <p class="footer-list-title">Contact Us</p>
+                    </li>
+
+                    <li class="footer-item">
+
+                        <div class="footer-item-icon">
+                            <ion-icon name="call"></ion-icon>
+                        </div>
+
+                        <div>
+                        
+                            <a href="tel:+2486871365" class="footer-item-link">+111-222-3333</a>
+                        </div>
+
+                    </li>
+
+                    <li class="footer-item">
+
+                        <div class="footer-item-icon">
+                            <ion-icon name="mail"></ion-icon>
+                        </div>
+
+                        <div>
+                          
+                            <a href="https://www.youtube.com/watch?v=w0AOGeqOnFY&ab_channel=JeffLau" class="footer-item-link">Kokonut~kokonut.com</a>
+                        </div>
+
+                    </li>
+
+                    <li class="footer-item">
+
+                        <div class="footer-item-icon">
+                            <ion-icon name="location"></ion-icon>
+                        </div>
+
+                        <address class="footer-item-link">
+              Genting Highlands, 69000 Genting Highlands, Pahang
+            </address>
+
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p class="copyright">
+                &copy; 2022 <a href="#" class="copyright-link">YoungPeace</a>. All Right Reserved
+            </p>
+        </div>
+
+    </footer>
 
 
 
@@ -268,7 +349,43 @@
     </a>
 
 
+    <!-- 
+    - custom js link
+  -->
+    <script src="./assets/js/master.js"></script>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- 
+    - ionicon link
+  -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+
+            <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+      <script>
+          document.querySelector('html').classList.remove('no-js');
+          if (!window.Cypress) {
+              const scrollCounter = document.querySelector('.js-scroll-counter');
+
+              AOS.init({
+                  mirror: true
+              });
+
+              document.addEventListener('aos:in', function (e) {
+                  console.log('in!', e.detail);
+              });
+
+              window.addEventListener('scroll', function () {
+                  scrollCounter.innerHTML = window.pageYOffset;
+              });
+          }
+      </script>
+
+
+            
             <script>
                 var dd_main = document.querySelector(".dd_main");
 
@@ -277,7 +394,4 @@
                 })
             </script>
 
-    <!-- 
-    - custom js link
-  -->
-    <script src="../UserPage/assets/js/navSlide.js">
+

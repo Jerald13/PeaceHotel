@@ -77,7 +77,7 @@
     <Content Include="UserPage\assets\images\Slide1.jpg" />
     <Content Include="UserPage\assets\images\Slide11.jpg" />
     <Content Include="UserPage\assets\images\Slide2.jpg" />
-    <Content Include="UserPage\assets\js\navSlide.js" />
+    <Content Include="UserPage\assets\js\master.js" />
     <Content Include="UserPage\assets\js\script.js" />
     <Content Include="UserPage\Home.aspx" />
     <Content Include="UserPage\UserProfile.aspx" />

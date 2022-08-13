@@ -1,4 +1,5 @@
-<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Home.aspx.cs" Inherits="PeaceHotel.Home" %>
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="NavSearch.master.cs" Inherits="PeaceHotel.UserPage.MasterPage.NavSearch" %>
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -12,7 +13,7 @@
     <!-- 
     - favicon
   -->
-    <link rel="shortcut icon" href="./assets/images/PeaceLogo.png" type="image/svg+xml">
+    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
 
     <!-- 
     - custom css link
@@ -20,9 +21,9 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="../UserPage/assets/css/style.css">
 
-     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <!-- 
     - google font link
   -->
@@ -43,7 +44,6 @@
 
 
     
-
     <!-- 
     - #HEADER
   -->
@@ -194,11 +194,12 @@
     <main>
         <article>
 
-            <%--Slider&Video--%>
+           
+             <%--Slider&Video--%>
 
-             <div id="full-screen" class="full-screen">
+            <%-- <div id="full-screen" class="full-screen">
                 <video src="./assets/images/hotelvideo.mp4" id="video" class="video" autoplay muted></video>
-            </div> 
+            </div> --%>
 
 
 
@@ -255,7 +256,7 @@
                     <div class="input grid">
                         <div class="box">
                             <label>CHECK-IN</label>&nbsp;
-                    <asp:TextBox ID="checkInDate" runat="server"></asp:TextBox>
+                    <asp:TextBox ID="checkInDate" runat="server" ></asp:TextBox>
                             <br />
                         </div>
                         <div class="box">
@@ -273,7 +274,7 @@
                     </div>
                     <div class="search">
                        <%-- <input type="submit" runat="server" value="CHECK AVAILABILITY">--%>
-                         <asp:Button type="submit" ID="Button2" runat="server" Text="CHECK AVAILABILITY" OnClick="Button2_Click"
+                         <asp:Button type="submit" ID="Button2" runat="server" Text="CHECK AVAILABILITY"
                         />
                         <br />
                         <asp:Label ID="Label1" runat="server"></asp:Label>
@@ -283,146 +284,16 @@
 
         </form>
 
-
-
-    
-
-            <!-- Book -->
-
-
-              <!-- Text -->
-
-                    <div class="TextContent"  >
-                <span class="TextContentspan">
-                <h1>
-                    IN THE HEART OF PEACE PLACE
-                </h1>
-                <p>Framed by the towering natural wonder of Table Mountain, Peace Place is a tranquil enclave surrounded by mesmerising waterways and a traditional harbour, moments from the vibrant Victoria & Alfred Waterfront.</p>
-            </span>
-            </div>
-
-              <!-- Text -->
-
            
 
-           <%--RoomSlide--%>
-
-             <section class="room top" id="room"  data-aos="fade-up" data-aos-offset="-400"  data-aos-easing="ease-in" data-aos-once="true">
-    <div class="Roomcontainer">
-      <div class="heading_top flex1">
-        <div class="heading">
-
-        </div>
-        <div class="button">
-          <button class="btn1">VIEW ALL</button>
-        </div>
-      </div>
-
-      <div class="content grid">
-        <div class="box">
-          <div class="img">
-            <img src="./assets/images/rooms1.jpg" alt="">
-          </div>
-          <div class="text">
-            <h3>Single Rooms</h3>
-            <p> <span>RM</span>129 <span>/per night</span> </p>
-          </div>
-        </div>
-        <div class="box">
-          <div class="img">
-            <img src="./assets/images/rooms2.jpg" alt="">
-          </div>
-          <div class="text">
-            <h3>Double Rooms</h3>
-            <p> <span>RM</span>129 <span>/per night</span> </p>
-          </div>
-        </div>
-        <div class="box">
-          <div class="img">
-            <img src="./assets/images/rooms3.jpg" alt="">
-          </div>
-          <div class="text">
-            <h3>Triple Rooms</h3>
-            <p> <span>RM</span>129 <span>/per night</span> </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
 
 
-            <%--RoomSlide--%>
-
-             <div class="TextContent" style="margin-top:80px;margin-bottom:45px;">
-                <span class="TextContentspan">
-                <h1>
-                   CUSTOMER REVIEW
-                </h1>
-                
-            </span>
-            </div>
-
-              <%--CustoemrReview--%>
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+    </asp:ContentPlaceHolder>
 
 
-                <div class="wrapperReview"  data-aos="fade-up" data-aos-offset="-400" data-aos-once="true" data-aos-easing="ease-in">
-        <div class="boxReview" >
-            <i class="fas fa-quote-left quote"></i>
-          <p>Pretty cool place and relax </p>
-            <div class="contentReview"  >
-                <div class="info">
-                    <div class="name">Alex Smith</div>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="far fa-star"></i>
-                        <i class="far fa-star"></i>
-                        <i class="far fa-star"></i>
-                    </div>
-                </div>
-             
-            </div>
-        </div>
-        <div class="boxReview">
-            <i class="fas fa-quote-left quote"></i>
-            <p>Lorem aliasry ipsum dolor sits ametans, consectetur adipisicing elitits. Expedita reiciendis itaque placeat thuratu, quasi yiuos repellendus repudiandae deleniti ideas fuga molestiae, alias.</p>
-            <div class="contentReview">
-                <div class="info">
-                    <div class="name">Steven Chris</div>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="far fa-star"></i>
-                        <i class="far fa-star"></i>
-                    </div>
-                </div>
-            
-            </div>
-        </div>
-        <div class="boxReview">
-            <i class="fas fa-quote-left  quote"></i>
-            <p>Lorem aliasry ipsum dolor sits ametans, consectetur adipisicing elitits. Expedita reiciendis itaque placeat thuratu, quasi yiuos repellendus repudiandae deleniti ideas fuga molestiae, alias.</p>
-            <div class="contentReview">
-                <div class="info">
-                    <div class="name">Kristina Bellis</div>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="far fa-star"></i>
-                    </div>
-                </div>
-            
-            </div>
-        </div>
-    </div>
 
-                  <%--CustoemrReview--%>
-
-
-    <!-- 
+                <!-- 
     - #FOOTER
   -->
 
@@ -550,9 +421,7 @@
 
 
 
-
-
-    <!-- 
+                <!-- 
     - #GO TO TOP
   -->
 
@@ -561,12 +430,10 @@
     </a>
 
 
-
-
     <!-- 
     - custom js link
   -->
-    <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/master.js"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
@@ -596,6 +463,88 @@
                   scrollCounter.innerHTML = window.pageYOffset;
               });
           }
+
+
+          const slider = document.querySelector(".slider");
+          const nextBtn = document.querySelector(".next-btn");
+          const prevBtn = document.querySelector(".prev-btn");
+          const slides = document.querySelectorAll(".slide");
+          const slideIcons = document.querySelectorAll(".slide-icon");
+          const numberOfSlides = slides.length;
+          var slideNumber = 0;
+
+          //image slider next button
+          nextBtn.addEventListener("click", () => {
+              slides.forEach((slide) => {
+                  slide.classList.remove("active");
+              });
+              slideIcons.forEach((slideIcon) => {
+                  slideIcon.classList.remove("active");
+              });
+
+              slideNumber++;
+
+              if (slideNumber > (numberOfSlides - 1)) {
+                  slideNumber = 0;
+              }
+
+              slides[slideNumber].classList.add("active");
+              slideIcons[slideNumber].classList.add("active");
+          });
+
+          //image slider previous button
+          prevBtn.addEventListener("click", () => {
+              slides.forEach((slide) => {
+                  slide.classList.remove("active");
+              });
+              slideIcons.forEach((slideIcon) => {
+                  slideIcon.classList.remove("active");
+              });
+
+              slideNumber--;
+
+              if (slideNumber < 0) {
+                  slideNumber = numberOfSlides - 1;
+              }
+
+              slides[slideNumber].classList.add("active");
+              slideIcons[slideNumber].classList.add("active");
+          });
+
+          //image slider autoplay
+          var playSlider;
+
+          // var repeater = () => {
+          //     playSlider = setInterval(function() {
+          //         slides.forEach((slide) => {
+          //             slide.classList.remove("active");
+          //         });
+          //         slideIcons.forEach((slideIcon) => {
+          //             slideIcon.classList.remove("active");
+          //         });
+
+          //         slideNumber++;
+
+          //         if (slideNumber > (numberOfSlides - 1)) {
+          //             slideNumber = 0;
+          //         }
+
+          //         slides[slideNumber].classList.add("active");
+          //         slideIcons[slideNumber].classList.add("active");
+          //     }, 4000);
+          // }
+          // repeater();
+
+          //stop the image slider autoplay on mouseover
+          slider.addEventListener("mouseover", () => {
+              clearInterval(playSlider);
+          });
+
+//start the image slider autoplay again on mouseout
+// slider.addEventListener("mouseout", () => {
+//     repeater();
+// });
+
       </script>
 
 
@@ -607,10 +556,4 @@
                     this.classList.toggle("active");
                 })
             </script>
-
-
-
-
-
-
 
