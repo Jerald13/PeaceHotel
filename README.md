@@ -10,6 +10,7 @@ UserPage
 5)User Profile
 6)Login / SignIn / Change Password - a bit use html valiation
 7)Booked Page
+8)custoemr viewed page
 
 Staff Features
 1)Staff

@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Home.aspx.cs" Inherits="PeaceHotel.Home" %>
+<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Home.aspx.cs" Inherits="PeaceHotel.Home" %>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -65,6 +65,7 @@
                     <button class="nav-close-btn" aria-label="Close Menu" data-nav-close-btn>
             <ion-icon name="close-outline"></ion-icon>
           </button>
+
                 </div>
 
                 <ul class="navbar-list">
@@ -90,6 +91,13 @@
 
                         <%--Account Box--%>
 
+<%--User Profile
+    Admin Page
+    Booked Rooms
+    Viewed Rooms
+    Logout
+    
+    --%>
 
 
  
@@ -105,13 +113,19 @@
 						<div class"space" style="content="";height=30px;" >
 						<div class="dd_right">
                             <div class="imageAcc">
-                                <img src="./assets/images/Acc.jpg" alt="Flowers in Chania">
+                                <img src="./assets/images/Acc.jpg" alt="Acc">
+                                <div class="centered">Sign up to our Peace member<br />to stay connected to Peace Place</div>
+                                <button class="AccButton">VIEW PROFILE</button>
                             </div>
+                              <p class="HeadText">PRECE PLACE</p>
 							<ul>
-								<li>Location</li>
-								<li>Favorites</li>
-								<li>Addpeople</li>
-								<li>Logout</li>
+                                
+                              
+								<a href="#footer"><li>EDIT PROFILE</li></a>
+								<li>BOOKED ROOMS</li>
+                                <li>VIEWED ROOMS</li>
+                                <li>CHANGE PASSWORD</li>
+								<li>LOGOUT</li>
 							</ul>
 						</div>
                             </div>
