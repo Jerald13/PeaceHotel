@@ -1,15 +1,13 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="UserProfile.aspx.cs" Inherits="PeaceHotel.UserPage.MasterPage.UserProfile" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" MasterPageFile="~/UserPage/MasterPage/Nav.Master" CodeBehind="UserProfile.aspx.cs" Inherits="PeaceHotel.UserPage.MasterPage.UserProfile" %>
 
-<!DOCTYPE html>
+   <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
 
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <title></title>
-</head>
-<body>
-    <form id="form1" runat="server">
-        <div>
-        </div>
-    </form>
-</body>
-</html>
+    
+
+          <asp:Label ID="Label1" runat="server" Text="Label">Do Here</asp:Label>
+
+    
+
+          </asp:Content>
+ 
+

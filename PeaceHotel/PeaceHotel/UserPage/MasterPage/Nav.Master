@@ -1,4 +1,4 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="NavSearch.Master.cs" Inherits="PeaceHotel.UserPage.Site1" %>
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Nav.Master.cs" Inherits="PeaceHotel.UserPage.Site1" %>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -43,7 +43,6 @@
 
 
     
-
     <!-- 
     - #HEADER
   -->
@@ -60,30 +59,110 @@
             <nav class="navbar" data-navbar>
 
                 <div class="navbar-top">
-                    <a href="#" class="logo">Peace</a>
-
+                   <a href="#" class="logo">Peace</a>
+                       <%--<img src="./assets/images/PeaceLogo.png" class="logo" alt="Acc">--%>
+                    
                     <button class="nav-close-btn" aria-label="Close Menu" data-nav-close-btn>
             <ion-icon name="close-outline"></ion-icon>
           </button>
+
                 </div>
 
                 <ul class="navbar-list">
 
                     <li class="navbar-item">
-                        <a href="#en" class="navbar-link" aria-haspopup="listbox" aria-expanded="false" class="SHh" data-navbar-link><i class="fa fa-phone"></i></a>
+                        <a href="#footer" class="navbar-link" aria-haspopup="listbox" aria-expanded="false" class="SHh" data-navbar-link><i class="fa fa-phone"></i></a>
                     </li>
 
                     <li class="navbar-item">
-                        <a href="#about" class="navbar-link" data-navbar-link><i class="fa fa-envelope"></i></a>
+                        <a href="#footer" class="navbar-link" data-navbar-link><i class="fa fa-envelope"></i></a>
                     </li>
 
                     <li class="navbar-item">
                         <a href="#services" class="navbar-link" data-navbar-link><span id="navText">ROOMS</span></a>
-
                     </li>
 
+
+                                 <%--Mobile View--%>
+                                <div class="mobile-link">
+                                    <li class="navbar-item">
+                                        <a href="#services" class="navbar-link" data-navbar-link><span id="navText">EDIT PROFILE</span></a>
+                                    </li>
+                                     <li class="navbar-item">
+                                        <a href="#services" class="navbar-link" data-navbar-link><span id="navText">ADMIN PAGE</span></a>
+                                    </li>
+                                     <li class="navbar-item">
+                                        <a href="#services" class="navbar-link" data-navbar-link><span id="navText">BOOKED ROOMS</span></a>
+                                    </li>
+                                     <li class="navbar-item">
+                                        <a href="#services" class="navbar-link" data-navbar-link><span id="navText">VIEWED ROOMS</span></a>
+                                    </li>
+                                     <li class="navbar-item">
+                                        <a href="#services" class="navbar-link" data-navbar-link><span id="navText">CHANGE PASSWORD</span></a>
+                                    </li>
+                                     <li class="navbar-item">
+                                        <a href="#services" class="navbar-link" data-navbar-link><span id="navText">LOGOUT</span></a>
+                                    </li>
+                                </div>
+                              
+                                 <%--Mobile View--%>
+
+
                     <li class="navbar-item">
-                        <a href="#features" class="navbar-link" data-navbar-link><span id="navText">SIGNUP</span></a>
+                        <%--<a href="#features" class="navbar-link" data-navbar-link><span id="navText">SIGNUP</span></a>--%>
+                   <%--     <a href="#" class="navbar-link" data-navbar-link><span id="dd_main">LEE</span></a>--%>
+
+
+
+                        <%--Account Box--%>
+
+ 
+<div class="wrapperAcc">
+	<div class="navbarAcc">
+
+		<div class="nav_right">
+			<ul>
+				<li class="nr_li dd_main">
+				              <a  class="navbar-link" data-navbar-link><span id="navText">LEE</span></a>
+					
+					<div class="dd_menu">
+						<div class"space" style="content="";height=30px;" >
+						<div class="dd_right">
+                            <div class="imageAcc">
+                                <img src="./assets/images/Acc.jpg" alt="Acc">
+                                <%--<div class="centered">Sign up to our Peace member<br />to stay connected to Peace Place</div>--%>
+                                       <div class="centered">Welcome to our Peace member<br />to stay connected to Peace Place</div>
+                                <a href="#footer"> <button class="AccButton">VIEW PROFILE</button></a>
+                               
+                            </div>
+                              <p class="HeadText">PRECE PLACE</p>
+                            <ul>
+
+                                <li><a class="cool-link" href="#">EDIT PROFILE</a></li>
+                                <li><a class="cool-link" href="#">ADMIN PAGE</a></li>
+                                <li><a class="cool-link" href="#">BOOKED ROOMS</a></li>
+                                <li><a class="cool-link" href="#">VIEWED ROOMS</a></li>
+                                <li><a class="cool-link" href="#">CHANGE PASSWORD</a></li>
+                                <li><a class="cool-link" href="#">LOGOUT</a></li>
+                        
+
+          
+
+							</ul>
+						</div>
+                            </div>
+					</div>
+				</li>
+			
+			</ul>
+		</div>
+	</div>
+</div>	
+
+     
+                        <%--Account Box--%>
+
+
                     </li>
 
 
@@ -92,7 +171,8 @@
             </nav>
 
             <a href="#">
-                <h1 class="logo">Peace</h1>
+                <%--<img src="./assets/images/PeaceLogo.png" class="logo" alt="Acc">--%>
+               <h1 class="logo">Peace</h1>
             </a>
 
             <a href="#" class="btn">
@@ -117,8 +197,8 @@
         - #HERO
       -->
 
-             <%--<div id="full-screen" class="full-screen">
-                <video src="../UserPage/assets/images/hotelvideo.mp4" id="video" class="video" autoplay muted></video>
+           <%--  <div id="full-screen" class="full-screen">
+                <video src="./assets/images/hotelvideo.mp4" id="video" class="video" autoplay muted></video>
             </div> --%>
 
 
@@ -128,15 +208,15 @@
             <section id="slide">
                 <div class="slider">
                     <div class="slide active">
-                        <img src="../UserPage/assets/images/Slide1.jpg" alt="">
+                        <img src="./assets/images/Slide1.jpg" alt="">
                         <div class="info">
                             <h2>SPECIOUS RETREATS</h2>
-                            <span class="slideText"><p>Dive into summer at Peace’s luxurious, nature-blessed resorts, where expansive villas embrace stunning indoor-outdoor living for memorable moments..</p></span>
+                            <span class="slideText"><p>Dive into summer at Peace's luxurious, nature-blessed resorts, where expansive villas embrace stunning indoor-outdoor living for memorable moments..</p></span>
                             <button class="btn" onclick="playVid()" type="button">Play video</button>
                         </div>
                     </div>
                     <div class="slide">
-                        <img src="../UserPage/assets/images/Slide2.jpg" alt="">
+                        <img src="./assets/images/Slide2.jpg" alt="">
                         <div class="info">
                             <h2>SPECIOUS RETREATS</h2>
                             <span class="slideText"><p>Dive into summer at Peace’s luxurious, nature-blessed resorts, where expansive villas embrace stunning indoor-outdoor living for memorable moments..</p></span>
@@ -144,7 +224,7 @@
                         </div>
                     </div>
                     <div class="slide">
-                        <img src="../UserPage/assets/images/Slide.jpg" alt="">
+                        <img src="./assets/images/Slide.jpg" alt="">
                         <div class="info">
                             <h2>SPECIOUS RETREATS</h2>
                             <span class="slideText"><p>Dive into summer at Peace’s luxurious, nature-blessed resorts, where expansive villas embrace stunning indoor-outdoor living for memorable moments..</p></span>
@@ -156,7 +236,7 @@
                         <i class="fas fa-chevron-left prev-btn"></i>
                         <i class="fas fa-chevron-right next-btn"></i>
                     </div>
-                    <div class="navigation-visibility">
+                    <div class="navigation-visibility" style="top: 34px !important;">
                         <div class="slide-icon active"></div>
                         <div class="slide-icon"></div>
                         <div class="slide-icon"></div>
@@ -167,14 +247,7 @@
             <!-- </section> -->
 
 
-            <!-- Book -->
-            
-
-
-    
-
-            <!-- Book -->
-
+           
 
 
 

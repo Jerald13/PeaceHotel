@@ -12,7 +12,7 @@
     <!-- 
     - favicon
   -->
-    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+    <link rel="shortcut icon" href="./assets/images/PeaceLogo.png" type="image/svg+xml">
 
     <!-- 
     - custom css link
@@ -60,8 +60,9 @@
             <nav class="navbar" data-navbar>
 
                 <div class="navbar-top">
-                    <a href="#" class="logo">Peace</a>
-
+                   <a href="#" class="logo">Peace</a>
+                       <%--<img src="./assets/images/PeaceLogo.png" class="logo" alt="Acc">--%>
+                    
                     <button class="nav-close-btn" aria-label="Close Menu" data-nav-close-btn>
             <ion-icon name="close-outline"></ion-icon>
           </button>
@@ -80,8 +81,33 @@
 
                     <li class="navbar-item">
                         <a href="#services" class="navbar-link" data-navbar-link><span id="navText">ROOMS</span></a>
-
                     </li>
+
+
+                                 <%--Mobile View--%>
+                                <div class="mobile-link">
+                                    <li class="navbar-item">
+                                        <a href="#services" class="navbar-link" data-navbar-link><span id="navText">EDIT PROFILE</span></a>
+                                    </li>
+                                     <li class="navbar-item">
+                                        <a href="#services" class="navbar-link" data-navbar-link><span id="navText">ADMIN PAGE</span></a>
+                                    </li>
+                                     <li class="navbar-item">
+                                        <a href="#services" class="navbar-link" data-navbar-link><span id="navText">BOOKED ROOMS</span></a>
+                                    </li>
+                                     <li class="navbar-item">
+                                        <a href="#services" class="navbar-link" data-navbar-link><span id="navText">VIEWED ROOMS</span></a>
+                                    </li>
+                                     <li class="navbar-item">
+                                        <a href="#services" class="navbar-link" data-navbar-link><span id="navText">CHANGE PASSWORD</span></a>
+                                    </li>
+                                     <li class="navbar-item">
+                                        <a href="#services" class="navbar-link" data-navbar-link><span id="navText">LOGOUT</span></a>
+                                    </li>
+                                </div>
+                              
+                                 <%--Mobile View--%>
+
 
                     <li class="navbar-item">
                         <%--<a href="#features" class="navbar-link" data-navbar-link><span id="navText">SIGNUP</span></a>--%>
@@ -90,15 +116,6 @@
 
 
                         <%--Account Box--%>
-
-<%--User Profile
-    Admin Page
-    Booked Rooms
-    Viewed Rooms
-    Logout
-    
-    --%>
-
 
  
 <div class="wrapperAcc">
@@ -114,18 +131,24 @@
 						<div class="dd_right">
                             <div class="imageAcc">
                                 <img src="./assets/images/Acc.jpg" alt="Acc">
-                                <div class="centered">Sign up to our Peace member<br />to stay connected to Peace Place</div>
-                                <button class="AccButton">VIEW PROFILE</button>
+                                <%--<div class="centered">Sign up to our Peace member<br />to stay connected to Peace Place</div>--%>
+                                       <div class="centered">Welcome to our Peace member<br />to stay connected to Peace Place</div>
+                                <a href="#footer"> <button class="AccButton">VIEW PROFILE</button></a>
+                               
                             </div>
                               <p class="HeadText">PRECE PLACE</p>
-							<ul>
-                                
-                              
-								<a href="#footer"><li>EDIT PROFILE</li></a>
-								<li>BOOKED ROOMS</li>
-                                <li>VIEWED ROOMS</li>
-                                <li>CHANGE PASSWORD</li>
-								<li>LOGOUT</li>
+                            <ul>
+
+                                <li><a class="cool-link" href="#">EDIT PROFILE</a></li>
+                                <li><a class="cool-link" href="#">ADMIN PAGE</a></li>
+                                <li><a class="cool-link" href="#">BOOKED ROOMS</a></li>
+                                <li><a class="cool-link" href="#">VIEWED ROOMS</a></li>
+                                <li><a class="cool-link" href="#">CHANGE PASSWORD</a></li>
+                                <li><a class="cool-link" href="#">LOGOUT</a></li>
+                        
+
+          
+
 							</ul>
 						</div>
                             </div>
@@ -137,9 +160,7 @@
 	</div>
 </div>	
 
-
-                       
-
+     
                         <%--Account Box--%>
 
 
@@ -151,7 +172,8 @@
             </nav>
 
             <a href="#">
-                <h1 class="logo">Peace</h1>
+                <%--<img src="./assets/images/PeaceLogo.png" class="logo" alt="Acc">--%>
+               <h1 class="logo">Peace</h1>
             </a>
 
             <a href="#" class="btn">
@@ -190,7 +212,7 @@
                         <img src="./assets/images/Slide1.jpg" alt="">
                         <div class="info">
                             <h2>SPECIOUS RETREATS</h2>
-                            <span class="slideText"><p>Dive into summer at Peace’s luxurious, nature-blessed resorts, where expansive villas embrace stunning indoor-outdoor living for memorable moments..</p></span>
+                            <span class="slideText"><p>Dive into summer at Peace's luxurious, nature-blessed resorts, where expansive villas embrace stunning indoor-outdoor living for memorable moments..</p></span>
                             <button class="btn" onclick="playVid()" type="button">Play video</button>
                         </div>
                     </div>
