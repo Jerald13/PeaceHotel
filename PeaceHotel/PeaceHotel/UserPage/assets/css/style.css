@@ -216,6 +216,24 @@ body {
     animation: waveAnim 2s linear infinite alternate;
 }
 
+.fadeinUp {
+    -webkit-animation: fadeInUp 500ms ease-in-out; /* Chrome, Safari, Opera */
+    animation: fadeInUp 500ms ease-in-out;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(40px);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+    }
+}
+
 @keyframes waveAnim {
     0% {
         transform: translate(0, 0) rotate(0);
@@ -355,17 +373,74 @@ right-menu:hover .dropdown-menu {
         }
 
     .navbarAcc .nav_right ul li img {
-        width: 35px;
+        width: 360px;
         vertical-align: middle;
+        /* padding-left: 10px; */
+        /* padding-right: 10px; */
+        filter: 60;
+        filter: brightness(50%);
+        max-height: 225px;
+        margin-bottom: 20px;
+        position: relative;
+        text-align: center;
+        color: white;
+
     }
+
+.imageAcc {
+    overflow: hidden;
+}
+    .imageAcc img {
+        width: 100%;
+        transition: 0.8s all ease-in-out;
+    }
+
+.imageAcc:hover img {
+    transform: scale(1.5);
+}
+
+
+
+
+
+
+
+.centered {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 348px;
+    text-align: center;
+    font-size: 13px !important;
+    line-height: 30px !important;
+    font-weight: 700;
+}
+
+
+.AccButton {
+    position: absolute;
+    top: 42%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 348px;
+    text-align: center;
+    font-size: 13px !important;
+    line-height: 30px !important;
+    font-weight: 700;
+    border: 1px solid #fff;
+    color: #fff;
+    max-width: 200px;
+}
+
     .navbarAcc .dd_menu {
         content: "";
         position: absolute;
-        right: -106px;
+        right: -360px;
         top: 44px;
         display: block;
         background: #fff;
-        border-radius: 15px;
+        /* border-radius: 15px; */
         box-shadow: 0px 0px 3px rgb(0 0 0 / 25%);
         display: none;
     }
@@ -373,8 +448,8 @@ right-menu:hover .dropdown-menu {
         .navbarAcc .dd_menu .dd_left {
             background: #74ded8;
             padding: 15px 20px;
-            border-top-left-radius: 15px;
-            border-bottom-left-radius: 15px;
+            /*border-top-left-radius: 15px;*/
+            /*border-bottom-left-radius: 15px;*/
         }
 
             .navbarAcc .dd_menu .dd_left li {
@@ -384,11 +459,20 @@ right-menu:hover .dropdown-menu {
 
         .navbarAcc .dd_menu .dd_right {
             padding: 15px 20px;
+            width: 400px;
+            transition: opacity 250ms 5s ease;
+            /*opacity: 0;*/
+            font-family: Arial, Helvetica, sans-serif;
+            font-size:9px;
         }
 
         .navbarAcc .dd_menu li {
             margin-bottom: 10px;
-            color: #868686;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #000;
+            letter-spacing: 2px;
+            /* line-height: 1.818; */
+            font-size: 11px !important;
         }
 
 
@@ -397,6 +481,21 @@ right-menu:hover .dropdown-menu {
             height:60px;
 
         }
+
+        .navbarAcc .dd_menu li {
+            margin-bottom: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #000;
+            letter-spacing: .09375rem;
+            /* line-height: 1.818; */
+            font-size: 14px;
+        }
+
+p.HeadText {
+    color: #9e9e9e;
+    margin-bottom:15px;
+    
+}
 
         .navbarAcc .dd_menu:before {
           /*  content: "";
@@ -408,16 +507,20 @@ right-menu:hover .dropdown-menu {
             content: "";
             position: absolute;
             top: -20px;
-            right: 0px !important;
+            right: -50px !important;
             /*border: 10px solid;*/
             border-color: transparent transparent #fff transparent;
-            width: 200px;
+            width: 500px;
             height: 100px;
             display: block
         }
 
     .navbarAcc .dd_main:hover .dd_menu {
         display: flex;
+        /*opacity: 1;*/
+        /*transition-delay: 250ms;*/
+        animation: fadeInUp 0.5s;
+        transition: 2s;
     }
 
 
