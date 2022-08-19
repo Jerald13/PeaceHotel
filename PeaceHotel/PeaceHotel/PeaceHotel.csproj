@@ -68,6 +68,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="AdminPage\Admin.aspx" />
+    <Content Include="UserPage\assets\css\blog.css" />
+    <Content Include="UserPage\blog.aspx" />
     <Content Include="UserPage\assets\css\style.css" />
     <Content Include="UserPage\assets\images\Acc.jpg" />
     <Content Include="UserPage\assets\images\favicon.svg" />
@@ -91,6 +93,13 @@
     </Compile>
     <Compile Include="AdminPage\Admin.aspx.designer.cs">
       <DependentUpon>Admin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserPage\blog.aspx.cs">
+      <DependentUpon>blog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserPage\blog.aspx.designer.cs">
+      <DependentUpon>blog.aspx</DependentUpon>
     </Compile>
     <Compile Include="UserPage\Home.aspx.cs">
       <DependentUpon>Home.aspx</DependentUpon>
