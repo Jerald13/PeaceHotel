@@ -132,7 +132,7 @@
                             <div class="imageAcc">
                                 <img src="./assets/images/Acc.jpg" alt="Acc">
                                 <%--<div class="centered">Sign up to our Peace member<br />to stay connected to Peace Place</div>--%>
-                                       <div class="centered">Welcome to our Peace member<br />to stay connected to Peace Place</div>
+                                       <div class="centered">Welcome to our Peace member<br />to stay connected to Peace Placeform</div>
                                 <a href="#footer"> <button class="AccButton">VIEW PROFILE</button></a>
                                
                             </div>
@@ -282,7 +282,7 @@
                 </div>
             </section>
 
-        </form>
+      
 
            
 
@@ -291,7 +291,7 @@
                 <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
     </asp:ContentPlaceHolder>
 
-
+              </form>
 
                 <!-- 
     - #FOOTER
