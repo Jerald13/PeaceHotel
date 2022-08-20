@@ -63,7 +63,7 @@
   </div>
 </div>
 </body>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js%22%3E</script>
+    
     <script>
         var header = document.getElementById("paymentTypes");
         var btns = header.getElementsByClassName("payment-btn");
