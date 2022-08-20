@@ -2,6 +2,11 @@
 
    <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
        <style>
+           *, *::before, *::after {
+    margin: 0 0 0 0;
+    padding: 0;
+    box-sizing: border-box;
+}
            table {
     margin: auto;
 }
@@ -12,9 +17,27 @@
     display: inline-block;
     max-width: 45px;
 }
+          input#ContentPlaceHolder1_Login1_LoginButton {
+    width: 283px;
+    margin: auto;
+    margin-left: 155px;
+}   
+          input#ContentPlaceHolder1_Login1_RememberMe {
+    margin-left: 111px;
+    margin-top: 10px;
+    margin-bottom: 16px;
+}
+          input#ContentPlaceHolder1_Button3 {
+    margin-left: 684px;
+}
        </style>
-                      <asp:Login ID="Login1" runat="server" Width="471px" ForeColor="Black" Height="145px" OnAuthenticate="Login1_Authenticate">
+                      <asp:Login ID="Login1" runat="server" Width="471px" ForeColor="Black" Height="145px" OnAuthenticate="Login1_Authenticate" DestinationPageUrl="~/UserPage/Home.aspx">
                       </asp:Login>
+
+    
+
+          <br />
+       <asp:Button ID="Button3" runat="server" ForeColor="Black" Height="25px" Text="Register" Width="283px" PostBackUrl="~/UserPage/Register.aspx" />
 
     
 

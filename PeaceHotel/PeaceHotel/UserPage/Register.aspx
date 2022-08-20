@@ -2,6 +2,11 @@
 
  <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
      <style>
+         *, *::before, *::after {
+    margin: 0 0 0 0;
+    padding: 0;
+    box-sizing: border-box;
+}
          table#ContentPlaceHolder1_CreateUserWizard1 {
           margin: auto;
         }
@@ -11,7 +16,10 @@
     max-width: 150px;
     display: none;
 }
-input[type="submit"]{
+input#ContentPlaceHolder1_Button3 {
+    margin: auto;
+}
+input#ContentPlaceHolder1_Button4 {
     margin: auto;
 }
      </style>
@@ -24,8 +32,9 @@ input[type="submit"]{
 
                     
 
-     <asp:Button ID="Button3" runat="server" Height="30px" Margin="1580px" Text="Login" Width="120px" ForeColor="Black" OnClick="Button3_Click1" />
-     <asp:Button ID="Button4" runat="server" Height="30px" Text="Create User" Width="120px" ForeColor="Black" OnClick="Button4_Click" />
+     <asp:Button ID="Button3" runat="server" Height="30px" Margin="1580px" Text="Go to Login" Width="120px" ForeColor="Black" OnClick="Button3_Click1" PostBackUrl="~/UserPage/Login.aspx" />
+     <br />
+     <asp:Button ID="Button4" runat="server" Height="30px" Text="Create User" Width="120px" ForeColor="Black" OnClick="Button4_Click" PostBackUrl="~/UserPage/Login.aspx" />
 
                     
 
