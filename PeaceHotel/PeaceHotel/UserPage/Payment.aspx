@@ -1,5 +1,7 @@
-<<<<<<< HEAD
-﻿<%@ Page Language="C#" %>
+
+
+<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Payment.aspx.cs" Inherits="PeaceHotel.UserPage.Payment" %>
+
 
 <!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">

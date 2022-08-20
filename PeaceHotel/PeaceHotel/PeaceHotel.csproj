@@ -68,9 +68,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="AdminPage\Admin.aspx" />
-    <Content Include="App_Data\hotel.mdf" />
-    <Content Include="App_Data\hotel_log.ldf">
-      <DependentUpon>hotel.mdf</DependentUpon>
+    <Content Include="App_Data\HotelNew.mdf" />
+    <Content Include="App_Data\HotelNew_log.ldf">
+      <DependentUpon>HotelNew.mdf</DependentUpon>
     </Content>
     <Content Include="UserPage\assets\css\blog.css" />
     <Content Include="UserPage\assets\css\Payment.css" />
@@ -90,10 +90,12 @@
     <Content Include="UserPage\Home.aspx" />
     <Content Include="UserPage\Login.aspx" />
     <Content Include="UserPage\Payment.aspx" />
+    <Content Include="UserPage\Payment2.aspx" />
     <Content Include="UserPage\Register.aspx" />
     <Content Include="UserPage\UserProfile.aspx" />
     <Content Include="UserPage\Roons.aspx" />
     <Content Include="Web.config" />
+    <Content Include="WebForm1.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AdminPage\Admin.aspx.cs">
@@ -146,6 +148,13 @@
     <Compile Include="UserPage\MasterPage\NavSearch.Master.designer.cs">
       <DependentUpon>NavSearch.Master</DependentUpon>
     </Compile>
+    <Compile Include="UserPage\Payment2.aspx.cs">
+      <DependentUpon>Payment2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserPage\Payment2.aspx.designer.cs">
+      <DependentUpon>Payment2.aspx</DependentUpon>
+    </Compile>
     <Compile Include="UserPage\Register.aspx.cs">
       <DependentUpon>Register.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -166,6 +175,13 @@
     </Compile>
     <Compile Include="UserPage\Roons.aspx.designer.cs">
       <DependentUpon>Roons.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
