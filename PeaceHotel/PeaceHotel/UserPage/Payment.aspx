@@ -12,7 +12,7 @@
 <body style="width:100%;">
     <div class="backToMenu">
         <a href="Home.aspx" style="text-decoration: none;"><button class="backButton" style="font-size:30px;">&#x2039;</button></a>
-                <a href="Home.aspx" style="text-decoration: none;"><button class="backToMenu" style="font-size:30px;">Back To Menu</button></a>
+        <a href="Home.aspx" style="text-decoration: none;"><button class="backMenu" style="font-size:30px;">Back To Menu</button></a>
     </div>
 <div class="payment-container">
   <div class="payment__types" id="paymentTypes">
@@ -45,25 +45,24 @@
   <div class="receipt">
     <div class="receipt-detail">
     <div class="col"><p>Cost:</p>
-    <h2 class="cost">$400</h2><br/>
+    <h2 class="cost">$800</h2><br/>
     <p>Name:</p>
-    <h2 class="seller">Codedgar</h2>
+    <h2 class="buyer">Er Hao</h2>
     </div>
     <div class="col">
-      <p>Bought Items:</p>
-      <h3 class="bought-items">Corsair Mouse</h3>
-      <p class="bought-items description">Gaming mouse with shiny lights</p>
-      <p class="bought-items price">$200 (50% discount)</p><br/>
-      <h3 class="bought-items">Gaming keyboard</h3>
-      <p class="bought-items description">Look mommmy, it has colors!</p>
-      <p class="bought-items price">$200 (50% discount)</p><br/>
+      <p>Booking Rooms:</p>
+      <h3 class="booking-rooms">Single Room</h3>
+      <p class="booking-rooms description">Room with one bed</p>
+      <p class="booking-rooms price">$200</p><br/>
+      <h3 class="booking-rooms">Luxury Room</h3>
+      <p class="booking-rooms description">Room with 2 double bed and luxury decoration</p>
+      <p class="booking-rooms price">$600</p><br/>
     </div>
     <p class="comprobe">This information will be sended to your email</p>
     </div>
   </div>
 </div>
 </body>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js%22%3E</script>
     <script>
         var header = document.getElementById("paymentTypes");
         var btns = header.getElementsByClassName("payment-btn");
@@ -82,10 +81,6 @@
         function showQrCode() {
             document.getElementById("card").style.display = "none";
             document.getElementById("QR").style.display = "block";
-        }
-
-        if (window.innerWidth < 851) {
-            document.getElementById("backButton").innerHTML = "Back To Menu";
         }
     </script>
 
