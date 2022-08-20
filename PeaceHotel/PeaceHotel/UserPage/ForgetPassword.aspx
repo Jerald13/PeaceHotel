@@ -5,6 +5,11 @@
 
    <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
        <style>
+           *, *::before, *::after {
+    margin: 0 0 0 0;
+    padding: 0;
+    box-sizing: border-box;
+}
            table#ContentPlaceHolder1_ChangePassword1 {
     margin: auto;
 }
@@ -16,7 +21,7 @@ input#ContentPlaceHolder1_ChangePassword1_ChangePasswordContainerID_CancelPushBu
     color: black;
 }
        </style>
-                      <asp:ChangePassword ID="ChangePassword1" runat="server" ForeColor="Black">
+                      <asp:ChangePassword ID="ChangePassword1" runat="server" ForeColor="Black" CancelDestinationPageUrl="~/UserPage/Login.aspx" ContinueDestinationPageUrl="~/UserPage/Login.aspx">
                       </asp:ChangePassword>
 
     
