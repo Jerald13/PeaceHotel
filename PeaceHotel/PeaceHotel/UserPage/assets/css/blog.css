@@ -114,3 +114,12 @@ a.text-muted:focus {
 .mar-top {
     margin-top: 15px;
 }
+
+
+span.time.text-muted.text-sm {
+    display: inline-block;
+    margin-left: 3px;
+    color: #aaa;
+    letter-spacing: 0px !important;
+}
+

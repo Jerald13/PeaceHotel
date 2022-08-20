@@ -111,8 +111,8 @@ C:\Users\User\Desktop\SemV2\WebAspNet\PeaceHotel\PeaceHotel\PeaceHotel\bin\rosly
 C:\Users\User\Desktop\SemV2\WebAspNet\PeaceHotel\PeaceHotel\PeaceHotel\bin\roslyn\VBCSCompiler.exe.config
 C:\Users\User\Desktop\SemV2\WebAspNet\PeaceHotel\PeaceHotel\PeaceHotel\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
 C:\Users\User\Desktop\SemV2\WebAspNet\PeaceHotel\PeaceHotel\PeaceHotel\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\User\Desktop\SemV2\WebAspNet\PeaceHotel\PeaceHotel\PeaceHotel\obj\Debug\PeaceHotel.csproj.AssemblyReference.cache
 C:\Users\User\Desktop\SemV2\WebAspNet\PeaceHotel\PeaceHotel\PeaceHotel\obj\Debug\PeaceHotel.csproj.CoreCompileInputs.cache
 C:\Users\User\Desktop\SemV2\WebAspNet\PeaceHotel\PeaceHotel\PeaceHotel\obj\Debug\PeaceHotel.csproj.CopyComplete
 C:\Users\User\Desktop\SemV2\WebAspNet\PeaceHotel\PeaceHotel\PeaceHotel\obj\Debug\PeaceHotel.dll
 C:\Users\User\Desktop\SemV2\WebAspNet\PeaceHotel\PeaceHotel\PeaceHotel\obj\Debug\PeaceHotel.pdb
+C:\Users\User\Desktop\SemV2\WebAspNet\PeaceHotel\PeaceHotel\PeaceHotel\obj\Debug\PeaceHotel.csproj.AssemblyReference.cache

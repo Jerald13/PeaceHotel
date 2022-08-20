@@ -7,15 +7,13 @@
 
       
 
-                      <asp:CreateUserWizard ID="CreateUserWizard1" runat="server" class="form" Width="141px">
-    <WizardSteps>
-        <asp:CreateUserWizardStep runat="server" />
-        <asp:CompleteWizardStep runat="server" />
-    </WizardSteps>
-</asp:CreateUserWizard>
-
-
-           
+                      <br />
+                      <asp:Login ID="Login1" runat="server">
+                      </asp:Login>
+                      <br />
+                      <br />
+                      <br />
+                      <br />
 
 
       

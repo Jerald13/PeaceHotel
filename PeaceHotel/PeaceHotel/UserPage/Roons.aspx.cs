@@ -11,9 +11,20 @@ namespace PeaceHotel.UserPage
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+      
         }
 
+        protected void CreateUserWizard1_CreatedUser(object sender, EventArgs e)
+        {
 
+            //string foobar = CreateUserWizard1.UserName;
+            //Label2.Text = foobar;
+            //Response.Redirect("YourPage.aspx");
+        }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Home.aspx");
+        }
     }
 }

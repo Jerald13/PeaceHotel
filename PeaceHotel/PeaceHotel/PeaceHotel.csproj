@@ -68,7 +68,12 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="AdminPage\Admin.aspx" />
+    <Content Include="App_Data\hotel.mdf" />
+    <Content Include="App_Data\hotel_log.ldf">
+      <DependentUpon>hotel.mdf</DependentUpon>
+    </Content>
     <Content Include="UserPage\assets\css\blog.css" />
+    <Content Include="UserPage\assets\css\Payment.css" />
     <Content Include="UserPage\blog.aspx" />
     <Content Include="UserPage\assets\css\style.css" />
     <Content Include="UserPage\assets\images\Acc.jpg" />
@@ -82,6 +87,7 @@
     <Content Include="UserPage\assets\js\master.js" />
     <Content Include="UserPage\assets\js\script.js" />
     <Content Include="UserPage\Home.aspx" />
+    <Content Include="UserPage\Payment.aspx" />
     <Content Include="UserPage\UserProfile.aspx" />
     <Content Include="UserPage\Roons.aspx" />
     <Content Include="Web.config" />

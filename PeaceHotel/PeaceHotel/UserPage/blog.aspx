@@ -14,9 +14,9 @@
                 <textarea class="form-control" rows="2" placeholder="What are you thinking?"></textarea>
                 <div class="mar-top clearfix">
                     <button class="btn btn-sm btn-primary pull-right" type="submit"><i class="fa fa-pencil fa-fw"></i> Share</button>
-                    <a class="btn btn-trans btn-icon fa fa-video-camera add-tooltip" href="#"></a>
+            <%--        <a class="btn btn-trans btn-icon fa fa-video-camera add-tooltip" href="#"></a>
                     <a class="btn btn-trans btn-icon fa fa-camera add-tooltip" href="#"></a>
-                    <a class="btn btn-trans btn-icon fa fa-file add-tooltip" href="#"></a>
+                    <a class="btn btn-trans btn-icon fa fa-file add-tooltip" href="#"></a>--%>
 
                 </div>
             </div>
@@ -26,28 +26,29 @@
                 <!-- Newsfeed Content -->
                 <!--===================================================-->
                 <div class="media-block">
-                   <a class="media-left" href="#"><img class="img-circle img-sm" alt="Profile Picture" src="https://bootdey.com/img/Content/avatar/avatar1.png"></a>
+                   <a class="media-left" ><img class="img-circle img-sm" alt="Profile Picture" src="https://bootdey.com/img/Content/avatar/avatar1.png"></a>
                     <div class="media-body">
                         <div class="mar-btm">
-                            <a href="#" class="btn-link text-semibold media-heading box-inline">Lisa D.</a>
-                            <p class="text-muted text-sm"><i class="fa fa-mobile fa-lg"></i>- 11 min ago</p>
+                            <a class="btn-link text-semibold media-heading box-inline">Doctor T<span class="time text-muted text-sm"></i> 11 min ago</span></a>
+                    
                         </div>
                         <p>consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
                             consequat.
                         </p>
                         <div class="pad-ver">
                             <div class="btn-group">
-                                <a class="btn btn-sm btn-default btn-hover-success" href="#"><i class="fa fa-thumbs-up"></i></a>
-                                <a class="btn btn-sm btn-default btn-hover-danger" href="#"><i class="fa fa-thumbs-up"></i></a>
+                                <a class="btn btn-sm btn-default btn-hover-success"><i class="fa fa-thumbs-up"></i></a>
+                      
                             </div>
-                            <button class="replybutton" data-commentbox="panel1">Reply</button><br/><br/>
-
+                           
+                            <button type="button" class="replybutton" data-commentbox="panel1">Reply</button><br/><br/>
+                                
 <div class="replybox" id="panel1" style="display:none">
 <textarea cols="35" rows="8"></textarea><br/>
 <button class="cancelbutton">Cancel</button><br/><br/>
 </div>
 
-                            <button class="replyDisplay" data-commentbox="panel2"><i class="fa fa-caret-down" style="font-size:15px"></i> View Reply</button><br/><br/>
+                            <button type="button" class="replyDisplay" data-commentbox="panel2"><i class="fa fa-caret-down" style="font-size:15px"></i> View Reply</button><br/><br/>
 
                         </div>
                         <hr>
@@ -55,19 +56,19 @@
                         <!-- Comments -->
                         <div class="reply" id="panel2" style="display:none;">
                             <div class="media-block">
-                               <a class="media-left" href="#"><img class="img-circle img-sm" alt="Profile Picture"  src="https://bootdey.com/img/Content/avatar/avatar1.png"></a>
+                               <a class="media-left" ><img class="img-circle img-sm" alt="Profile Picture"  src="https://bootdey.com/img/Content/avatar/avatar1.png"></a>
                                 <div class="media-body">
                                     <div class="mar-btm">
-                                        <a href="#" class="btn-link text-semibold media-heading box-inline">Bobby Marz</a>
+                                        <a  class="btn-link text-semibold media-heading box-inline">Bobby Marz</a>
                                         <p class="text-muted text-sm"><i class="fa fa-mobile fa-lg"></i>- 7 min ago</p>
                                     </div>
                                     <p>Sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
                                     <div class="pad-ver">
                                         <div class="btn-group">
-                                            <a class="btn btn-sm btn-default btn-hover-success active" href="#"><i class="fa fa-thumbs-up"></i> You Like it</a>
-                                            <a class="btn btn-sm btn-default btn-hover-danger" href="#"><i class="fa fa-thumbs-down"></i></a>
+                                            <a class="btn btn-sm btn-default btn-hover-success active" ><i class="fa fa-thumbs-up"></i> You Like it</a>
+                                          
                                         </div>
-                                        <a class="btn btn-sm btn-default btn-hover-primary" href="#">Comment</a>
+                                        <a class="btn btn-sm btn-default btn-hover-primary" >Comment</a>
                                     </div>
                                     <hr>
                                 </div>
@@ -85,7 +86,8 @@
                                     <div class="pad-ver">
                                         <div class="btn-group">
                                             <a class="btn btn-sm btn-default btn-hover-success" href="#"><i class="fa fa-thumbs-up"></i></a>
-                                            <a class="btn btn-sm btn-default btn-hover-danger" href="#"><i class="fa fa-thumbs-down"></i></a>
+                                           
+
                                         </div>
                                         <a class="btn btn-sm btn-default btn-hover-primary" href="#">Comment</a>
                                     </div>
@@ -114,7 +116,7 @@
                             <span class="tag tag-sm"><i class="fa fa-heart text-danger"></i> 250 Likes</span>
                             <div class="btn-group">
                                 <a class="btn btn-sm btn-default btn-hover-success" href="#"><i class="fa fa-thumbs-up"></i></a>
-                                <a class="btn btn-sm btn-default btn-hover-danger" href="#"><i class="fa fa-thumbs-down"></i></a>
+                             
                             </div>
                             <a class="btn btn-sm btn-default btn-hover-primary" href="#">Comment</a>
                         </div>
@@ -133,7 +135,7 @@
                                     <div>
                                         <div class="btn-group">
                                             <a class="btn btn-sm btn-default btn-hover-success" href="#"><i class="fa fa-thumbs-up"></i></a>
-                                            <a class="btn btn-sm btn-default btn-hover-danger" href="#"><i class="fa fa-thumbs-down"></i></a>
+                                           
                                         </div>
                                         <a class="btn btn-sm btn-default btn-hover-primary" href="#">Comment</a>
                                     </div>
@@ -159,43 +161,43 @@
                var toggleR = 0;
 
                $('.replybutton').on('click', function () {
-                 
+
                    if (toggleR == 0) {
                        $('.replybox').hide();
                        var commentboxId = $(this).attr('data-commentbox');
-                       $('#' + commentboxId).toggle().fadeIn(200);
+                       $('#' + commentboxId).toggle();
                        toggleR = 1;
-                   }else {
-                           $('.replybox').hide();
-                           toggleR = 0;
-                       
+                   } else {
+                       $('.replybox').hide();
+                       toggleR = 0;
+
                    }
-                      
-                   });
 
-            
-
-                   var toggle = 0;
+               });
 
 
-                   $('.replyDisplay').on('click', function () {
-                       if (toggle == 0) {
-                           $('.reply').hide();
-                           var commentboxId = $(this).attr('data-commentbox');
-                           $('#' + commentboxId).toggle();
-                           toggle = 1;
-                       } else {
-                           $('.reply').hide();
-                           toggle = 0;
-                       }
-                   });
 
-              
-
-});
+               var toggle = 0;
 
 
-          
+               $('.replyDisplay').on('click', function () {
+                   if (toggle == 0) {
+                       $('.reply').hide();
+                       var commentboxId = $(this).attr('data-commentbox');
+                       $('#' + commentboxId).toggle();
+                       toggle = 1;
+                   } else {
+                       $('.reply').hide();
+                       toggle = 0;
+                   }
+               });
+
+
+
+           });
+
+
+
        </script>
 
           </asp:Content>
