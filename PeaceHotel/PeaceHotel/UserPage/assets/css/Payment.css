@@ -6,14 +6,13 @@ body {
     background: #00d2ff;
     background: -webkit-linear-gradient(to right, #3a7bd5, #00d2ff);
     background: linear-gradient(to right, #3a7bd5, #00d2ff);
-    margin:0;
+    margin: 0;
 }
 
-.backToMenu{
-    position:absolute;
-    margin-left:45px;
-    margin-top:0px;
-
+.backToMenu {
+    position: absolute;
+    margin-left: 45px;
+    margin-top: 0px;
 }
 
 div.backToMenu > a > button {
@@ -21,12 +20,14 @@ div.backToMenu > a > button {
     width: 60px;
     height: 45px;
     transition: all 0.15s ease;
-    border-radius:30px;
+    border-radius: 30px;
 }
-div.backToMenu > a > button:hover {
-    -webkit-transform: translateY(-3px);
-    transform: translateY(-3px);
-}
+
+    div.backToMenu > a > button:hover {
+        -webkit-transform: translateY(-3px);
+        transform: translateY(-3px);
+    }
+
 .card {
     background: #16181a;
     border-radius: 14px;
@@ -47,13 +48,13 @@ div.backToMenu > a > button:hover {
     background: black;
     z-index: 99;
     display: none;
-    margin-bottom:-3px;
+    margin-bottom: -3px;
 }
 
-.QR .proceed{
-    margin-top:90px;
-    margin-left:-250px;
-}
+    .QR .proceed {
+        margin-top: 90px;
+        margin-left: -250px;
+    }
 
 .logo-card {
     max-width: 50px;
@@ -85,6 +86,7 @@ input#card-detail {
 ::placeholder {
     color: #8e8e8e;
 }
+
 .cardnumber {
     display: block;
     font-size: 20px;
@@ -136,7 +138,7 @@ input#card-detail {
     padding: 2px;
 }
 
-.bought-items {
+.booking-rooms {
     margin-top: -3px;
 }
 
@@ -225,7 +227,7 @@ input#card-detail {
     }
 
 
-button.backToMenu {
+button.backMenu {
     display: none;
 }
 
@@ -238,15 +240,17 @@ button.backButton {
     .backToMenu {
         width: 100%;
         text-align: center;
-        margin-left: 0;
-        margin-top:50px;
+        margin-top: 50px;
+        margin-left:0;
         display: block;
         position: relative;
     }
-    div.backToMenu > a > button {
+    div.backToMenu > a > button.backMenu {
         width: 80%;
+        margin:auto;
     }
 }
+
 @media (max-width: 600px) {
     .proceed {
         transform: translate(250px, 10px);
@@ -268,7 +272,7 @@ button.backButton {
         display: none;
     }
 
-    button.backToMenu {
+    button.backMenu {
         display: block;
     }
 }
