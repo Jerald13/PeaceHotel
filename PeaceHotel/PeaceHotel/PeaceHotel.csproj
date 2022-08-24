@@ -90,7 +90,6 @@
     <Content Include="UserPage\Home.aspx" />
     <Content Include="UserPage\Login.aspx" />
     <Content Include="UserPage\Payment.aspx" />
-    <Content Include="UserPage\Payment2.aspx" />
     <Content Include="UserPage\Register.aspx" />
     <Content Include="UserPage\UserProfile.aspx" />
     <Content Include="UserPage\Roons.aspx" />
@@ -148,12 +147,12 @@
     <Compile Include="UserPage\MasterPage\NavSearch.Master.designer.cs">
       <DependentUpon>NavSearch.Master</DependentUpon>
     </Compile>
-    <Compile Include="UserPage\Payment2.aspx.cs">
-      <DependentUpon>Payment2.aspx</DependentUpon>
+    <Compile Include="UserPage\Payment.aspx.cs">
+      <DependentUpon>Payment.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="UserPage\Payment2.aspx.designer.cs">
-      <DependentUpon>Payment2.aspx</DependentUpon>
+    <Compile Include="UserPage\Payment.aspx.designer.cs">
+      <DependentUpon>Payment.aspx</DependentUpon>
     </Compile>
     <Compile Include="UserPage\Register.aspx.cs">
       <DependentUpon>Register.aspx</DependentUpon>
