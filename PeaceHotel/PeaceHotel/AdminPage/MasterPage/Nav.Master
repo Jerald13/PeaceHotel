@@ -13,10 +13,10 @@
     <div class="main-wrapper">
         <div class="header">
             <div class="header-left">
-                <a href="Peace.jsp" class="logo">
+                <a href="../../UserPage/Home.aspx" class="logo">
                     <img src="../assets/img/logo2.png" width="50" height="70" alt="logo">
                     <span class="logoclass">Peace</span> </a>
-                <a href="Peace.jsp" class="logo logo-small">
+                <a href="../../UserPage/Home.aspx" class="logo logo-small">
                     <img src="../assets/img/logo2.png" alt="Logo" width="30" height="30">
                 </a>
             </div>

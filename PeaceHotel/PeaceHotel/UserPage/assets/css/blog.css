@@ -466,3 +466,21 @@ button.btn.btn-sm.btn-primary.pull-right {
     max-width: 463px;
     padding: 5px;
 }
+
+
+img.img-responsive.thumbnail {
+    width: 300px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    /* height: 219px; */
+    /* margin: 5px; */
+    margin-right: 23px;
+}
+
+.media-block {
+    margin-bottom: 20px;
+}
+
+textarea {
+    padding: 5px;
+}

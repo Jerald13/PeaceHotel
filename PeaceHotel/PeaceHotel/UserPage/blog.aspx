@@ -124,9 +124,120 @@
                             consequat.
                         </p>
 
-                              <img class="img-responsive thumbnail" src="https://via.placeholder.com/400x300" alt="Image">
+                            <div class="imagePost" style="display:flex;">
+                                                <img class="img-responsive thumbnail" src="assets/images/hotel2.jpg" alt="Image">
+      <img class="img-responsive thumbnail" src="assets/images/hotel2.jpg" alt="Image">
+                            </div>
+              
+                        <div class="pad-ver">
+                            <div class="btn-group">
+
+                                <span class="detail"> <a class="btn btn-default btn-hover-success"><i class="fa fa-thumbs-up" class="totalLike"> 2</i></a>  <button type="button" class="replybutton" data-commentbox="panel1">Reply</button><br/><br/> </span>
+
+                                 
+                      
+                            </div>
+                           
+                           
+                                
+<div class="replybox" id="panel1" style="display:none">
+<textarea cols="35" rows="8"></textarea><br/>
+    <button class="btn btn-default btn-hover-success">Send</button>
+</div>
+
+                            <button type="button" class="replyDisplay" data-commentbox="panel2"><i class="fa fa-caret-down" style="font-size:15px"></i> View 2 Reply</button><br/><br/>
+
+                        </div>
+                       
+
+                        <!-- Comments -->
+                        <div class="reply" id="panel2" style="display:none;">
+                            <div class="media-block">
+                       
+                                <div class="media-body">
+                                    <div class="mar-btm">
 
 
+
+
+
+                                           <a class="btn-link text-semibold media-heading box-inline">Doctor T<span class="time text-muted text-sm"></i> 11 min ago</span></a>
+                                    </div>
+                                    <p>Sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+                                    <div class="pad-ver">
+                                        <div class="btn-group">
+                                         
+                                        </div>
+                                    </div>
+                                  
+                                </div>
+                            </div>
+
+                            <div class="media-block">
+                             
+                                </a>
+                                <div class="media-body">
+                                    <div class="mar-btm">
+                                            <a class="btn-link text-semibold media-heading box-inline">Doctor T<span class="time text-muted text-sm"></i> 11 min ago</span></a>
+
+
+
+                                    </div>
+                                    <p>Duis autem vel eum iriure dolor in hendrerit in vulputate ?</p>
+                                    <div class="pad-ver">
+                                        <div class="btn-group">
+                                      
+                                           
+
+                                        </div>
+                                      
+                                    </div>
+                                   
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--===================================================-->
+                <!-- End Newsfeed Content -->
+
+
+
+                         <!-- Newsfeed Content -->
+                <!--===================================================-->
+                <div class="media-block">
+               
+                    <div class="media-body">
+                        <div class="mar-btm">
+
+
+
+<div id="container">
+  <div class="char ">
+           <a class="btn-link text-semibold media-heading box-inline">Doctor T   </a>
+  </div>
+  <div class="char float-right">
+     <div id="rating-display-container" >
+				  <div class="rating-display"></div>
+				  <div class="rating-display"></div>
+				  <div class="rating-display"></div>
+				  <div class="rating-display"></div>
+				  <div class="rating-display"></div>
+			 </div>
+  </div>
+</div>
+
+                        <span class="time text-muted text-sm"></i> 11 min ago</span>
+
+                        <p>consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
+                            consequat.
+                        </p>
+
+                            <div class="imagePost" style="display:flex;">
+                                                <img class="img-responsive thumbnail" src="assets/images/hotel2.jpg" alt="Image">
+      <img class="img-responsive thumbnail" src="assets/images/hotel2.jpg" alt="Image">
+                            </div>
+              
                         <div class="pad-ver">
                             <div class="btn-group">
 
@@ -198,10 +309,6 @@
                 </div>
                 <!--===================================================-->
                 <!-- End Newsfeed Content -->
-
-
-
-
 
 
                

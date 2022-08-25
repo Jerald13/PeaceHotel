@@ -80,9 +80,12 @@
                     </li>
 
                     <li class="navbar-item">
-                        <a href="#services" class="navbar-link" data-navbar-link><span id="navText">ROOMS</span></a>
+                        <a href="Rooms.aspx" class="navbar-link" data-navbar-link><span id="navText">ROOMS</span></a>
                     </li>
 
+                                        <li class="navbar-item">
+                        <a href="blog.aspx" class="navbar-link" data-navbar-link><span id="navText">BLOG</span></a>
+                    </li>
 
                                  <%--Mobile View--%>
                                 <div class="mobile-link">
@@ -132,18 +135,18 @@
                             <div class="imageAcc">
                                 <img src="./assets/images/Acc.jpg" alt="Acc">
                                 <%--<div class="centered">Sign up to our Peace member<br />to stay connected to Peace Place</div>--%>
-                                       <div class="centered">Welcome to our Peace member<br />to stay connected to Peace Placeform</div>
+                                       <div class="centered">Welcome to our Peace member<br />to stay connected to Peace</div>
                                 <a href="UserProfile.aspx"> <button class="AccButton">VIEW PROFILE</button></a>
                                
                             </div>
                               <p class="HeadText">PRECE PLACE</p>
                             <ul>
 
-                                 <li><a class="cool-link" href="Login.aspx">LOGIN PAGE</a></li>
-                                <li><a class="cool-link" href="#">ADMIN PAGE</a></li>
-                                <li><a class="cool-link" href="#">BOOKED ROOMS</a></li>
+                                <li><a class="cool-link" href="Login.aspx">LOGIN PAGE</a></li>
+                                <li><a class="cool-link" href="../../AdminPage/add-product.aspx">ADMIN PAGE</a></li>
+                                <li><a class="cool-link" href="bookedRooms.aspx">BOOKED ROOMS</a></li>
                                 <li><a class="cool-link" href="saved.aspx">SAVED ROOMS</a></li>
-                                <li><a class="cool-link" href="#">CHANGE PASSWORD</a></li>
+                                <li><a class="cool-link" href="ForgetPassword.aspx">CHANGE PASSWORD</a></li>
                                 <li><a class="cool-link" href="#">LOGOUT</a></li>
                         
 

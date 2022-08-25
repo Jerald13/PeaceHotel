@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="delete-staff.aspx.cs" MasterPageFile="~/StaffPage/MasterPage/Nav.Master" Inherits="PeaceHotel.AdminPage.delete_staff" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="delete-staff.aspx.cs" MasterPageFile="~/AdminPage/MasterPage/Nav.Master" Inherits="PeaceHotel.AdminPage.delete_staff" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
 

@@ -149,7 +149,7 @@
                 <button id="plus">+</button>
             </div>
             <h2></h2>
-            <button id="confirmBtn">Confirm Revervation</button>
+            <a href="Payment.aspx" style="display:grid;"> <button id="confirmBtn">Confirm Revervation</button> </a>
         </div>
 
         <div class="toggle-box">

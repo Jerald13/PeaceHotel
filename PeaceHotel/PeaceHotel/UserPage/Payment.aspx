@@ -12,8 +12,8 @@
 </head>
 <body style="width:100%;">
     <div class="backToMenu">
-        <a href="Home.aspx" style="text-decoration: none;"><button class="backButton" style="font-size:30px;">&#x2039;</button></a>
-        <a href="Home.aspx" style="text-decoration: none;"><button class="backMenu" style="font-size:30px;">Back To Menu</button></a>
+        <a href="confirm-booking.aspx" style="text-decoration: none;"><button class="backButton" style="font-size:30px;">&#x2039;</button></a>
+        <a href="confirm-booking.aspx" style="text-decoration: none;"><button class="backMenu" style="font-size:30px;">Back To Menu</button></a>
     </div>
 <div class="payment-container">
   <div class="payment__types" id="paymentTypes">
@@ -24,7 +24,7 @@
   </div>
   
   <div class="card" id="card">
-    <a href="#"><button class="proceed"><svg class="sendicon" width="24" height="24" viewBox="0 0 24 24">
+    <a href="bookedRooms.aspx"><button class="proceed"><svg class="sendicon" width="24" height="24" viewBox="0 0 24 24">
   <path d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z"></path>
 </svg></button></a>
     
@@ -39,7 +39,7 @@
   </div>
   <div class="QR" id="QR">
       <img src="./assets/images/QR code.png" width="250" height="250" />
-      <a href="#"><button class="proceed"><svg class="sendicon" width="24" height="24" viewBox="0 0 24 24">
+      <a href="bookedRooms.aspx"><button class="proceed"><svg class="sendicon" width="24" height="24" viewBox="0 0 24 24">
   <path d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z"></path>
 </svg></button></a>
   </div>

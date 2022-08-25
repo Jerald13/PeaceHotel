@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="add-staff.aspx.cs" MasterPageFile="~/StaffPage/MasterPage/Nav.Master" Inherits="PeaceHotel.AdminPage.add_staff" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="add-staff.aspx.cs" MasterPageFile="~/AdminPage/MasterPage/Nav.Master" Inherits="PeaceHotel.AdminPage.add_staff" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
         <link rel="shortcut icon" type="image/x-icon" href="../images/logo.jpeg">

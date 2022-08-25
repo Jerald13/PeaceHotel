@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="edit-product.aspx.cs" MasterPageFile="~/StaffPage/MasterPage/Nav.Master" Inherits="PeaceHotel.AdminPage.edit_product" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="edit-product.aspx.cs" MasterPageFile="~/AdminPage/MasterPage/Nav.Master" Inherits="PeaceHotel.AdminPage.edit_product" %>
 
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">

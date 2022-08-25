@@ -60,7 +60,7 @@
                     <asp:Label ID="Label1" runat="server" Height="16px" Text="Password :" Width="156px"></asp:Label>
                </td>
                <td class="auto-style1">
-                   <asp:Label ID="Label5" runat="server" Height="16px" Text="123456" Width="156px"></asp:Label>
+                   <asp:Label ID="Label5" runat="server" Height="16px" Text="******" Width="156px"></asp:Label>
                    <asp:TextBox ID="TextBox1" runat="server" Height="20px" Width="156px" />
                </td>
            </tr>

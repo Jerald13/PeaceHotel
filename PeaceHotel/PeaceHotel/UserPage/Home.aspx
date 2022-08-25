@@ -80,7 +80,11 @@
                     </li>
 
                     <li class="navbar-item">
-                        <a href="#services" class="navbar-link" data-navbar-link><span id="navText">ROOMS</span></a>
+                        <a href="Rooms.aspx" class="navbar-link" data-navbar-link><span id="navText">ROOMS</span></a>
+                    </li>
+
+                     <li class="navbar-item">
+                        <a href="blog.aspx" class="navbar-link" data-navbar-link><span id="navText">BLOG</span></a>
                     </li>
 
 
@@ -139,13 +143,12 @@
                               <p class="HeadText">PRECE PLACE</p>
                             <ul>
 
-                                <li><a class="cool-link" href="Login.aspx">LOGIN PAGE</a></li>
-                                <li><a class="cool-link" href="#">ADMIN PAGE</a></li>
-                                <li><a class="cool-link" href="#">BOOKED ROOMS</a></li>
+                                  <li><a class="cool-link" href="Login.aspx">LOGIN PAGE</a></li>
+                                <li><a class="cool-link" href="../../AdminPage/add-product.aspx">ADMIN PAGE</a></li>
+                                <li><a class="cool-link" href="bookedRooms.aspx">BOOKED ROOMS</a></li>
                                 <li><a class="cool-link" href="saved.aspx">SAVED ROOMS</a></li>
-                                <li><a class="cool-link" href="#">CHANGE PASSWORD</a></li>
+                                <li><a class="cool-link" href="ForgetPassword.aspx">CHANGE PASSWORD</a></li>
                                 <li><a class="cool-link" href="#">LOGOUT</a></li>
-                        
                                 
           
 
@@ -176,7 +179,7 @@
                <h1 class="logo">Peace</h1>
             </a>
 
-            <a href="#" class="btn">
+            <a href="Rooms.aspx" class="btn">
                 <!-- <ion-icon name="chevron-forward-outline" aria-hidden="true"></ion-icon> -->
 
                 <span>Book Now</span>
@@ -207,7 +210,9 @@
             <section id="slide">
                 <div class="slider">
                     <div class="slide active">
+                        
                         <img src="./assets/images/Slide1.jpg" alt="">
+                    
                         <div class="info">
                             <h2>SPECIOUS RETREATS</h2>
                             <span class="slideText"><p>Dive into summer at Peace's luxurious, nature-blessed resorts, where expansive villas embrace stunning indoor-outdoor living for memorable moments..</p></span>
@@ -314,33 +319,39 @@
 
         </div>
         <div class="button">
-          <button class="btn1">VIEW ALL</button>
+          <a href="Rooms.aspx">  <button class="btn1">VIEW ALL</button>   </a>
         </div>
       </div>
 
       <div class="content grid">
         <div class="box">
           <div class="img">
+                     <a href="Rooms.aspx">
             <img src="./assets/images/rooms1.jpg" alt="">
           </div>
+                                      </a>
           <div class="text">
             <h3>Single Rooms</h3>
             <p> <span>RM</span>129 <span>/per night</span> </p>
           </div>
         </div>
         <div class="box">
+              <a href="Rooms.aspx">
           <div class="img">
             <img src="./assets/images/rooms2.jpg" alt="">
           </div>
+                     </a>
           <div class="text">
             <h3>Double Rooms</h3>
             <p> <span>RM</span>129 <span>/per night</span> </p>
           </div>
         </div>
         <div class="box">
+                   <a href="Rooms.aspx">
           <div class="img">
             <img src="./assets/images/rooms3.jpg" alt="">
           </div>
+                        </a>
           <div class="text">
             <h3>Triple Rooms</h3>
             <p> <span>RM</span>129 <span>/per night</span> </p>

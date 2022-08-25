@@ -101,7 +101,7 @@
 										 <h6 class="text-striked text-muted mr-2">₹1,999</h6>
 										 <h6 class="text-success">32% off</h6>
 									</div> -->
-                                    <button class="btn-room btn-room-primary">Select</button>
+                                 <a  href="confirm-booking.aspx">    <button class="btn-room btn-room-primary">Select</button> </a>  
                                 </div>
 
                             </div>
