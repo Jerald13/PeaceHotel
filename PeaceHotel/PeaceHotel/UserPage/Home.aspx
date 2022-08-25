@@ -15,7 +15,7 @@
     <link rel="shortcut icon" href="./assets/images/PeaceLogo.png" type="image/svg+xml">
 
     <!-- 
-    - custom css link
+    - custom css linkFF
   -->
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
@@ -87,7 +87,7 @@
                                  <%--Mobile View--%>
                                 <div class="mobile-link">
                                     <li class="navbar-item">
-                                        <a href="#services" class="navbar-link" data-navbar-link><span id="navText">EDIT PROFILE</span></a>
+                                        <a href="Login.aspx" class="navbar-link" data-navbar-link><span id="navText">LOGIN PAGE</span></a>
                                     </li>
                                      <li class="navbar-item">
                                         <a href="#services" class="navbar-link" data-navbar-link><span id="navText">ADMIN PAGE</span></a>
@@ -96,7 +96,7 @@
                                         <a href="#services" class="navbar-link" data-navbar-link><span id="navText">BOOKED ROOMS</span></a>
                                     </li>
                                      <li class="navbar-item">
-                                        <a href="#services" class="navbar-link" data-navbar-link><span id="navText">VIEWED ROOMS</span></a>
+                                        <a href="saved.aspx" class="navbar-link" data-navbar-link><span id="navText">SAVED ROOMS</span></a>
                                     </li>
                                      <li class="navbar-item">
                                         <a href="#services" class="navbar-link" data-navbar-link><span id="navText">CHANGE PASSWORD</span></a>
@@ -133,20 +133,20 @@
                                 <img src="./assets/images/Acc.jpg" alt="Acc">
                                 <%--<div class="centered">Sign up to our Peace member<br />to stay connected to Peace Place</div>--%>
                                        <div class="centered">Welcome to our Peace member<br />to stay connected to Peace Place</div>
-                                <a href="#footer"> <button class="AccButton">VIEW PROFILE</button></a>
+                                <a href="UserProfile.aspx"> <button class="AccButton">VIEW PROFILE</button></a>
                                
                             </div>
                               <p class="HeadText">PRECE PLACE</p>
                             <ul>
 
-                                <li><a class="cool-link" href="#">EDIT PROFILE</a></li>
+                                <li><a class="cool-link" href="Login.aspx">LOGIN PAGE</a></li>
                                 <li><a class="cool-link" href="#">ADMIN PAGE</a></li>
                                 <li><a class="cool-link" href="#">BOOKED ROOMS</a></li>
-                                <li><a class="cool-link" href="#">VIEWED ROOMS</a></li>
+                                <li><a class="cool-link" href="saved.aspx">SAVED ROOMS</a></li>
                                 <li><a class="cool-link" href="#">CHANGE PASSWORD</a></li>
                                 <li><a class="cool-link" href="#">LOGOUT</a></li>
                         
-
+                                
           
 
 							</ul>

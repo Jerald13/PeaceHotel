@@ -60,7 +60,7 @@
             <nav class="navbar" data-navbar>
 
                 <div class="navbar-top">
-                   <a href="#" class="logo">Peace</a>
+                   <a href="Home.aspx" class="logo">Peace</a>
                        <%--<img src="./assets/images/PeaceLogo.png" class="logo" alt="Acc">--%>
                     
                     <button class="nav-close-btn" aria-label="Close Menu" data-nav-close-btn>
@@ -133,16 +133,16 @@
                                 <img src="./assets/images/Acc.jpg" alt="Acc">
                                 <%--<div class="centered">Sign up to our Peace member<br />to stay connected to Peace Place</div>--%>
                                        <div class="centered">Welcome to our Peace member<br />to stay connected to Peace Placeform</div>
-                                <a href="#footer"> <button class="AccButton">VIEW PROFILE</button></a>
+                                <a href="UserProfile.aspx"> <button class="AccButton">VIEW PROFILE</button></a>
                                
                             </div>
                               <p class="HeadText">PRECE PLACE</p>
                             <ul>
 
-                                <li><a class="cool-link" href="#">EDIT PROFILE</a></li>
+                                 <li><a class="cool-link" href="Login.aspx">LOGIN PAGE</a></li>
                                 <li><a class="cool-link" href="#">ADMIN PAGE</a></li>
                                 <li><a class="cool-link" href="#">BOOKED ROOMS</a></li>
-                                <li><a class="cool-link" href="#">VIEWED ROOMS</a></li>
+                                <li><a class="cool-link" href="saved.aspx">SAVED ROOMS</a></li>
                                 <li><a class="cool-link" href="#">CHANGE PASSWORD</a></li>
                                 <li><a class="cool-link" href="#">LOGOUT</a></li>
                         
@@ -171,12 +171,12 @@
 
             </nav>
 
-            <a href="#">
+            <a href="Home.aspx">
                 <%--<img src="./assets/images/PeaceLogo.png" class="logo" alt="Acc">--%>
                <h1 class="logo">Peace</h1>
             </a>
 
-            <a href="#" class="btn">
+            <a href="Rooms.aspx" class="btn">
                 <!-- <ion-icon name="chevron-forward-outline" aria-hidden="true"></ion-icon> -->
 
                 <span>Book Now</span>
@@ -212,7 +212,7 @@
                         <div class="info">
                             <h2>SPECIOUS RETREATS</h2>
                             <span class="slideText"><p>Dive into summer at Peace's luxurious, nature-blessed resorts, where expansive villas embrace stunning indoor-outdoor living for memorable moments..</p></span>
-                            <button class="btn" onclick="playVid()" type="button">Play video</button>
+                            <a href="Rooms.aspx"><button class="btn" onclick="playVid()" type="button">Book Now</button></a>
                         </div>
                     </div>
                     <div class="slide">

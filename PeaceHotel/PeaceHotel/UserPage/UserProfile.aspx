@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" MasterPageFile="~/UserPage/MasterPage/Nav.Master" CodeBehind="Roons.aspx.cs" Inherits="PeaceHotel.UserPage.WebForm1" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" MasterPageFile="~/UserPage/MasterPage/NavSearch.Master" CodeBehind="Roons.aspx.cs" Inherits="PeaceHotel.UserPage.WebForm1" %>
 
 
 
@@ -26,7 +26,7 @@
     }
 
 </style>
-                          
+                            
        <table>
            <tr>
                <td align="right" style="text-align">
@@ -92,6 +92,9 @@
        <br />
                           
        <div>
+
+           
+
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
     <script type="text/javascript">
         $(function () {
