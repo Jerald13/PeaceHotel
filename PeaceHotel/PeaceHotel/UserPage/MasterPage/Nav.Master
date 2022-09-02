@@ -49,6 +49,9 @@
 <body id="top">
 
     
+            
+   <% bool val1 = (System.Web.HttpContext.Current.User != null) && System.Web.HttpContext.Current.User.Identity.IsAuthenticated;   %>
+
 
 
     
@@ -91,11 +94,9 @@
                         <a href="Rooms.aspx" class="navbar-link" data-navbar-link><span id="navText">ROOMS</span></a>
                     </li>
 
-                     <li class="navbar-item">
+                                        <li class="navbar-item">
                         <a href="blog.aspx" class="navbar-link" data-navbar-link><span id="navText">BLOG</span></a>
                     </li>
-
-
 
                                  <%--Mobile View--%>
                                 <div class="mobile-link">
@@ -137,7 +138,18 @@
 		<div class="nav_right">
 			<ul>
 				<li class="nr_li dd_main">
-				              <a  class="navbar-link" data-navbar-link><span id="navText">LEE</span></a>
+
+				                                 <% if(val1) {%>
+                    <a style="text-transform: uppercase;" class="navbar-link" data-navbar-link><span id="navText">
+                                  <asp:LoginName ID="LoginName1" runat="server" />
+                              </span></a>
+                    
+<%          }
+            else { %>
+				          <li class="navbar-item">
+                        <a href="login.aspx" class="navbar-link" data-navbar-link><span id="navText">LOGIN</span></a>
+                    </li>
+                    <% } %>
 					
 					<div class="dd_menu">
 						<div class"space" style="content="";height=30px;" >
@@ -145,14 +157,14 @@
                             <div class="imageAcc">
                                 <img src="./assets/images/Acc.jpg" alt="Acc">
                                 <%--<div class="centered">Sign up to our Peace member<br />to stay connected to Peace Place</div>--%>
-                                       <div class="centered">Welcome to our Peace member<br />to stay connected to Peace Place</div>
+                                       <div class="centered">Welcome to our Peace member<br />to stay connected to Peace</div>
                                 <a href="UserProfile.aspx"> <button class="AccButton">VIEW PROFILE</button></a>
                                
                             </div>
                               <p class="HeadText">PRECE PLACE</p>
                             <ul>
 
-                               <li><a class="cool-link" href="Login.aspx">LOGIN PAGE</a></li>
+                                <li><a class="cool-link" href="Login.aspx">LOGIN PAGE</a></li>
                                 <li><a class="cool-link" href="../../AdminPage/add-product.aspx">ADMIN PAGE</a></li>
                                 <li><a class="cool-link" href="bookedRooms.aspx">BOOKED ROOMS</a></li>
                                 <li><a class="cool-link" href="saved.aspx">SAVED ROOMS</a></li>
@@ -204,11 +216,28 @@
 
 
 
-    <main>
+    </main>
         <article>
 
            
+             <%--Slider&Video--%>
 
+            <%-- <div id="full-screen" class="full-screen">
+                <video src="./assets/images/hotelvideo.mp4" id="video" class="video" autoplay muted></video>
+            </div> --%>
+
+
+
+
+
+
+            <!-- Book -->
+            
+        <form id="form1" runat="server">
+
+          
+
+      
 
            
 
@@ -217,7 +246,7 @@
                 <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
     </asp:ContentPlaceHolder>
 
-
+              </form>
 
                 <!-- 
     - #FOOTER

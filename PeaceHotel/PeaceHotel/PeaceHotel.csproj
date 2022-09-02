@@ -69,11 +69,13 @@
   <ItemGroup>
     <Content Include="AdminPage\add-product.aspx" />
     <Content Include="AdminPage\add-staff.aspx" />
+    <Content Include="AdminPage\addUserToRole.aspx" />
     <Content Include="AdminPage\all-customer.aspx" />
     <Content Include="AdminPage\all-product.aspx" />
     <Content Include="AdminPage\all-staff.aspx" />
     <Content Include="AdminPage\comment-reply.aspx" />
     <Content Include="AdminPage\comment.aspx" />
+    <Content Include="AdminPage\createRole.aspx" />
     <Content Include="AdminPage\delete-product.aspx" />
     <Content Include="AdminPage\delete-staff.aspx" />
     <Content Include="AdminPage\edit-customer.aspx" />
@@ -134,6 +136,7 @@
     <Content Include="assets\js\popper.min.js" />
     <Content Include="assets\js\script.js" />
     <Content Include="assets\js\select2.min.js" />
+    <Content Include="login.aspx" />
     <Content Include="UserPage\assets\css\blog.css" />
     <Content Include="UserPage\assets\css\flexbox.css" />
     <Content Include="UserPage\assets\css\Payment.css" />
@@ -155,16 +158,16 @@
     <Content Include="UserPage\assets\js\master.js" />
     <Content Include="UserPage\assets\js\script.js" />
     <Content Include="UserPage\bookedRooms.aspx" />
-    <Content Include="UserPage\ForgetPassword.aspx" />
     <Content Include="UserPage\Home.aspx" />
     <Content Include="UserPage\Login.aspx" />
     <Content Include="UserPage\Payment.aspx" />
+    <Content Include="UserPage\Profile\ForgetPassword.aspx" />
+    <Content Include="UserPage\Profile\style.css" />
+    <Content Include="UserPage\Profile\UserProfile.aspx" />
     <Content Include="UserPage\Register.aspx" />
     <Content Include="UserPage\Rooms.aspx" />
     <Content Include="UserPage\saved.aspx" />
-    <Content Include="UserPage\UserProfile.aspx" />
     <Content Include="Web.config" />
-    <Content Include="WebForm1.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AdminPage\add-product.aspx.cs">
@@ -180,6 +183,13 @@
     </Compile>
     <Compile Include="AdminPage\add-staff.aspx.designer.cs">
       <DependentUpon>add-staff.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminPage\addUserToRole.aspx.cs">
+      <DependentUpon>addUserToRole.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminPage\addUserToRole.aspx.designer.cs">
+      <DependentUpon>addUserToRole.aspx</DependentUpon>
     </Compile>
     <Compile Include="AdminPage\all-customer.aspx.cs">
       <DependentUpon>all-customer.aspx</DependentUpon>
@@ -216,6 +226,13 @@
     <Compile Include="AdminPage\comment.aspx.designer.cs">
       <DependentUpon>comment.aspx</DependentUpon>
     </Compile>
+    <Compile Include="AdminPage\createRole.aspx.cs">
+      <DependentUpon>createRole.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminPage\createRole.aspx.designer.cs">
+      <DependentUpon>createRole.aspx</DependentUpon>
+    </Compile>
     <Compile Include="AdminPage\delete-product.aspx.cs">
       <DependentUpon>delete-product.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -250,6 +267,13 @@
     </Compile>
     <Compile Include="AdminPage\edit-staff.aspx.designer.cs">
       <DependentUpon>edit-staff.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminPage\MasterPage\Nav.Master.cs">
+      <DependentUpon>Nav.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminPage\MasterPage\Nav.Master.designer.cs">
+      <DependentUpon>Nav.Master</DependentUpon>
     </Compile>
     <Compile Include="AdminPage\report-customerService.aspx.cs">
       <DependentUpon>report-customerService.aspx</DependentUpon>
@@ -286,6 +310,13 @@
     <Compile Include="AdminPage\viewSales.aspx.designer.cs">
       <DependentUpon>viewSales.aspx</DependentUpon>
     </Compile>
+    <Compile Include="login.aspx.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="login.aspx.designer.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
     <Compile Include="UserPage\blog.aspx.cs">
       <DependentUpon>blog.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -299,13 +330,6 @@
     </Compile>
     <Compile Include="UserPage\bookedRooms.aspx.designer.cs">
       <DependentUpon>bookedRooms.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="UserPage\ForgetPassword.aspx.cs">
-      <DependentUpon>ForgetPassword.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="UserPage\ForgetPassword.aspx.designer.cs">
-      <DependentUpon>ForgetPassword.aspx</DependentUpon>
     </Compile>
     <Compile Include="UserPage\Home.aspx.cs">
       <DependentUpon>Home.aspx</DependentUpon>
@@ -343,6 +367,20 @@
     <Compile Include="UserPage\Payment.aspx.designer.cs">
       <DependentUpon>Payment.aspx</DependentUpon>
     </Compile>
+    <Compile Include="UserPage\Profile\ForgetPassword.aspx.cs">
+      <DependentUpon>ForgetPassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserPage\Profile\ForgetPassword.aspx.designer.cs">
+      <DependentUpon>ForgetPassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserPage\Profile\UserProfile.aspx.cs">
+      <DependentUpon>UserProfile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserPage\Profile\UserProfile.aspx.designer.cs">
+      <DependentUpon>UserProfile.aspx</DependentUpon>
+    </Compile>
     <Compile Include="UserPage\Register.aspx.cs">
       <DependentUpon>Register.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -364,20 +402,6 @@
     <Compile Include="UserPage\saved.aspx.designer.cs">
       <DependentUpon>saved.aspx</DependentUpon>
     </Compile>
-    <Compile Include="UserPage\UserProfile.aspx.cs">
-      <DependentUpon>UserProfile.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="UserPage\UserProfile.aspx.designer.cs">
-      <DependentUpon>UserProfile.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="WebForm1.aspx.cs">
-      <DependentUpon>WebForm1.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="WebForm1.aspx.designer.cs">
-      <DependentUpon>WebForm1.aspx</DependentUpon>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="assets\fonts\feathericon-1.eot" />
@@ -388,9 +412,12 @@
     <Content Include="assets\fonts\MaterialIcons-Regular.ttf" />
     <Content Include="assets\fonts\MaterialIcons-Regular.woff" />
     <Content Include="assets\fonts\MaterialIcons-Regular.woff2" />
+    <Content Include="AdminPage\MasterPage\Nav.Master" />
+    <Content Include="AdminPage\Web.config" />
     <None Include="packages.config" />
     <Content Include="UserPage\MasterPage\Nav.Master" />
     <Content Include="UserPage\MasterPage\NavSearch.Master" />
+    <Content Include="UserPage\Profile\Web.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

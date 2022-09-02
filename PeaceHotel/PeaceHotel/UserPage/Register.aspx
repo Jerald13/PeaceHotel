@@ -1,4 +1,6 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" MasterPageFile="~/UserPage/MasterPage/NavSearch.Master" CodeBehind="Register.aspx.cs" Inherits="PeaceHotel.UserPage.Register" %>
+﻿
+
+<%@ Page Language="C#" AutoEventWireup="true" MasterPageFile="~/UserPage/MasterPage/NavSearch.Master" CodeBehind="Register.aspx.cs" Inherits="PeaceHotel.UserPage.Register" %>
 
  <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
      <style>
@@ -22,20 +24,43 @@ input#ContentPlaceHolder1_Button3 {
 input#ContentPlaceHolder1_Button4 {
     margin: auto;
 }
+
+
+input#ContentPlaceHolder1_CreateUserWizard1___CustomNav0_StepNextButtonButton {
+    color: black;
+    max-width: 159px;
+}
+
+input#ContentPlaceHolder1_CreateUserWizard1_CompleteStepContainer_ContinueButtonButton {
+    color: black;
+    width: 122px;
+    margin: auto;
+    margin-top: 20px;
+    height: 37px;
+}
      </style>
-                      <asp:CreateUserWizard ID="CreateUserWizard1" runat="server" class="form" Width="438px" ContinueDestinationPageUrl="~/UserPage/Login.aspx" Height="16px" OnCreatedUser="CreateUserWizard1_CreatedUser">
+
+     <asp:CreateUserWizard ID="CreateUserWizard1" runat="server" ContinueDestinationPageUrl="~/UserPage/Login.aspx.cs">
+         <WizardSteps>
+             <asp:CreateUserWizardStep ID="CreateUserWizardStep1" runat="server">
+             </asp:CreateUserWizardStep>
+             <asp:CompleteWizardStep ID="CompleteWizardStep1" runat="server">
+             </asp:CompleteWizardStep>
+         </WizardSteps>
+     </asp:CreateUserWizard>
+
+ <%--                          <asp:CreateUserWizard ID="CreateUserWizard2" runat="server" class="form" Width="438px" ContinueDestinationPageUrl="~/UserPage/Login.aspx" Height="16px" OnCreatedUser="CreateUserWizard1_CreatedUser">
     <WizardSteps>
         <asp:CreateUserWizardStep runat="server" />
         <asp:CompleteWizardStep runat="server" />
     </WizardSteps>
-</asp:CreateUserWizard>
-
+</asp:CreateUserWizard>--%>
                     
 
-     <asp:Button ID="Button3" runat="server" Height="30px" Margin="1580px" Text="Go to Login" Width="120px" ForeColor="Black" OnClick="Button3_Click1" PostBackUrl="~/UserPage/Login.aspx" />
+<%--     <asp:Button ID="Button3" runat="server" Height="30px" Margin="1580px" Text="Go to Login" Width="120px" ForeColor="Black" OnClick="Button3_Click1" PostBackUrl="~/UserPage/Login.aspx" />
      <br />
      <asp:Button ID="Button4" runat="server" Height="30px" Text="Create User" Width="120px" ForeColor="Black" OnClick="Button4_Click" PostBackUrl="~/UserPage/Login.aspx" />
 
-                    
+                 --%>   
 
           </asp:Content>

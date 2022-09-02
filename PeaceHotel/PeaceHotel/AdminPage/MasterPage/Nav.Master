@@ -6,6 +6,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>Admin Page</title>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
@@ -147,6 +148,17 @@
                                 <li><a href="report-ratingAndReview.aspx">Rating and Review Report </a></li>
                             </ul>
                         </li>
+
+                  
+
+                        <li class="submenu"><a href="#"><i class="fe fe-eye"></i><span>Role </span></a>
+                            <ul class="submenu_class" style="display: none;">
+                                <li><a href="report-shiping.aspx">Add User To Role</a></li>
+                                <li><a href="report-sales.aspx">Create Role</a></li>
+                                <li><a href="report-customerService.aspx">Manage Role</a></li>
+                            </ul>
+                        </li>
+
                     </ul>
                         <!-- Navigation bar -->
 

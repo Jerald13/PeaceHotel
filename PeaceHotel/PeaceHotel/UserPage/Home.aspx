@@ -40,6 +40,8 @@
 <body id="top">
 
     
+   <% bool val1 = (System.Web.HttpContext.Current.User != null) && System.Web.HttpContext.Current.User.Identity.IsAuthenticated;   %>
+
 
 
     
@@ -128,7 +130,19 @@
 		<div class="nav_right">
 			<ul>
 				<li class="nr_li dd_main">
-				              <a  class="navbar-link" data-navbar-link><span id="navText">LEE</span></a>
+                    <% if(val1) {%>
+                    <a style="text-transform: uppercase;" class="navbar-link" data-navbar-link><span id="navText">
+                                  <asp:LoginName ID="LoginName1" runat="server" />
+                              </span></a>
+                    
+<%          }
+            else { %>
+				          <li class="navbar-item">
+                        <a href="login.aspx" class="navbar-link" data-navbar-link><span id="navText">LOGIN</span></a>
+                    </li>
+                  <%--      <a style="text-transform: uppercase;" class="navbar-link" data-navbar-link>
+                              </span></a>--%>
+                    <% } %>
 					
 					<div class="dd_menu">
 						<div class"space" style="content="";height=30px;" >
@@ -147,7 +161,7 @@
                                 <li><a class="cool-link" href="../../AdminPage/add-product.aspx">ADMIN PAGE</a></li>
                                 <li><a class="cool-link" href="bookedRooms.aspx">BOOKED ROOMS</a></li>
                                 <li><a class="cool-link" href="saved.aspx">SAVED ROOMS</a></li>
-                                <li><a class="cool-link" href="ForgetPassword.aspx">CHANGE PASSWORD</a></li>
+                                <li><a class="cool-link" href="Profile/ForgetPassword.aspx">CHANGE PASSWORD</a></li>
                                 <li><a class="cool-link" href="#">LOGOUT</a></li>
                                 
           
