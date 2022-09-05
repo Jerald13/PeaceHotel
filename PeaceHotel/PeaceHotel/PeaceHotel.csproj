@@ -43,7 +43,15 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -75,16 +83,17 @@
     <Content Include="AdminPage\all-staff.aspx" />
     <Content Include="AdminPage\comment-reply.aspx" />
     <Content Include="AdminPage\comment.aspx" />
-    <Content Include="AdminPage\createRole.aspx" />
     <Content Include="AdminPage\delete-product.aspx" />
     <Content Include="AdminPage\delete-staff.aspx" />
     <Content Include="AdminPage\edit-customer.aspx" />
     <Content Include="AdminPage\edit-product.aspx" />
     <Content Include="AdminPage\edit-staff.aspx" />
+    <Content Include="AdminPage\ManageRoles.aspx" />
     <Content Include="AdminPage\report-customerService.aspx" />
     <Content Include="AdminPage\report-ratingAndReview.aspx" />
     <Content Include="AdminPage\report-sales.aspx" />
     <Content Include="AdminPage\report-shiping.aspx" />
+    <Content Include="AdminPage\UsersAndRoles.aspx" />
     <Content Include="AdminPage\viewSales.aspx" />
     <Content Include="App_Data\HotelNew.mdf" />
     <Content Include="App_Data\HotelNew_log.ldf">
@@ -137,6 +146,16 @@
     <Content Include="assets\js\script.js" />
     <Content Include="assets\js\select2.min.js" />
     <Content Include="login.aspx" />
+    <Content Include="Models\Model1.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Model1.edmx</DependentUpon>
+      <LastGenOutput>Model1.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\Model1.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Model1.edmx</DependentUpon>
+      <LastGenOutput>Model1.cs</LastGenOutput>
+    </Content>
     <Content Include="UserPage\assets\css\blog.css" />
     <Content Include="UserPage\assets\css\flexbox.css" />
     <Content Include="UserPage\assets\css\Payment.css" />
@@ -226,13 +245,6 @@
     <Compile Include="AdminPage\comment.aspx.designer.cs">
       <DependentUpon>comment.aspx</DependentUpon>
     </Compile>
-    <Compile Include="AdminPage\createRole.aspx.cs">
-      <DependentUpon>createRole.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="AdminPage\createRole.aspx.designer.cs">
-      <DependentUpon>createRole.aspx</DependentUpon>
-    </Compile>
     <Compile Include="AdminPage\delete-product.aspx.cs">
       <DependentUpon>delete-product.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -267,6 +279,13 @@
     </Compile>
     <Compile Include="AdminPage\edit-staff.aspx.designer.cs">
       <DependentUpon>edit-staff.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminPage\ManageRoles.aspx.cs">
+      <DependentUpon>ManageRoles.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminPage\ManageRoles.aspx.designer.cs">
+      <DependentUpon>ManageRoles.aspx</DependentUpon>
     </Compile>
     <Compile Include="AdminPage\MasterPage\Nav.Master.cs">
       <DependentUpon>Nav.Master</DependentUpon>
@@ -303,6 +322,13 @@
     <Compile Include="AdminPage\report-shiping.aspx.designer.cs">
       <DependentUpon>report-shiping.aspx</DependentUpon>
     </Compile>
+    <Compile Include="AdminPage\UsersAndRoles.aspx.cs">
+      <DependentUpon>UsersAndRoles.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminPage\UsersAndRoles.aspx.designer.cs">
+      <DependentUpon>UsersAndRoles.aspx</DependentUpon>
+    </Compile>
     <Compile Include="AdminPage\viewSales.aspx.cs">
       <DependentUpon>viewSales.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -316,6 +342,75 @@
     </Compile>
     <Compile Include="login.aspx.designer.cs">
       <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\aspnet_Applications.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\aspnet_Membership.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\aspnet_Paths.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\aspnet_PersonalizationAllUsers.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\aspnet_PersonalizationPerUser.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\aspnet_Profile.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\aspnet_Roles.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\aspnet_SchemaVersions.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\aspnet_Users.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\aspnet_WebEvent_Events.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Blog.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\BlogReply.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Booking.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Model1.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Model1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Model1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Payment.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Room.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\RoomType.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\savedRoom.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\User.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="UserPage\blog.aspx.cs">
       <DependentUpon>blog.aspx</DependentUpon>
@@ -414,6 +509,13 @@
     <Content Include="assets\fonts\MaterialIcons-Regular.woff2" />
     <Content Include="AdminPage\MasterPage\Nav.Master" />
     <Content Include="AdminPage\Web.config" />
+    <EntityDeploy Include="Models\Model1.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Model1.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\Model1.edmx.diagram">
+      <DependentUpon>Model1.edmx</DependentUpon>
+    </Content>
     <None Include="packages.config" />
     <Content Include="UserPage\MasterPage\Nav.Master" />
     <Content Include="UserPage\MasterPage\NavSearch.Master" />
@@ -427,6 +529,9 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="StaffPage\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

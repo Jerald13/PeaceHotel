@@ -40,6 +40,7 @@
 <body id="top">
 
     
+       <form id="form1" runat="server">
    <% bool val1 = (System.Web.HttpContext.Current.User != null) && System.Web.HttpContext.Current.User.Identity.IsAuthenticated;   %>
 
 
@@ -49,6 +50,7 @@
     <!-- 
     - #HEADER
   -->
+
 
     <header class="header" data-header>
         <div class="container">
@@ -108,7 +110,7 @@
                                         <a href="#services" class="navbar-link" data-navbar-link><span id="navText">CHANGE PASSWORD</span></a>
                                     </li>
                                      <li class="navbar-item">
-                                        <a href="#services" class="navbar-link" data-navbar-link><span id="navText">LOGOUT</span></a>
+                                        <a style="text-transform:uppercase;" href="Login.aspx"  class="navbar-link" data-navbar-link><span id="navText">  <asp:LoginStatus ID="LoginStatus1" style="color:black;" class="navbar-link" runat="server" /></span></a>
                                     </li>
                                 </div>
                               
@@ -138,7 +140,7 @@
 <%          }
             else { %>
 				          <li class="navbar-item">
-                        <a href="login.aspx" class="navbar-link" data-navbar-link><span id="navText">LOGIN</span></a>
+                        <a href="Login.aspx" class="navbar-link" data-navbar-link><span id="navText">LOGIN</span></a>
                     </li>
                   <%--      <a style="text-transform: uppercase;" class="navbar-link" data-navbar-link>
                               </span></a>--%>
@@ -151,20 +153,31 @@
                                 <img src="./assets/images/Acc.jpg" alt="Acc">
                                 <%--<div class="centered">Sign up to our Peace member<br />to stay connected to Peace Place</div>--%>
                                        <div class="centered">Welcome to our Peace member<br />to stay connected to Peace Place</div>
-                                <a href="UserProfile.aspx"> <button class="AccButton">VIEW PROFILE</button></a>
-                               
+                                <a href="Profile/UserProfile.aspx"> <asp:LinkButton class="AccButton" id="accBtn" runat="server" Text="VIEW PROFILE" OnCommand="accBtnCliked"/> </a>
+                               <%--<button class="AccButton">VIEW PROFILE</button>--%>
                             </div>
-                              <p class="HeadText">PRECE PLACE</p>
+                              <p class="HeadText">PEACE PLACE</p>
                             <ul>
 
-                                  <li><a class="cool-link" href="Login.aspx">LOGIN PAGE</a></li>
+
+                                <%if (System.Web.HttpContext.Current.User.IsInRole("Admin")) { %>
+
                                 <li><a class="cool-link" href="../../AdminPage/add-product.aspx">ADMIN PAGE</a></li>
-                                <li><a class="cool-link" href="bookedRooms.aspx">BOOKED ROOMS</a></li>
-                                <li><a class="cool-link" href="saved.aspx">SAVED ROOMS</a></li>
-                                <li><a class="cool-link" href="Profile/ForgetPassword.aspx">CHANGE PASSWORD</a></li>
-                                <li><a class="cool-link" href="#">LOGOUT</a></li>
-                                
-          
+                                <% } %>
+                                <li><a class="cool-link" href="../../UserPage/bookedRooms.aspx">BOOKED ROOMS</a></li>
+                                <li><a class="cool-link" href="../../UserPage/saved.aspx">SAVED ROOMS</a></li>
+                                <li><a class="cool-link" href="../../UserPage/Profile/ForgetPassword.aspx">CHANGE PASSWORD</a></li>
+                                <li><a class="cool-link" href="#" >  <asp:LoginStatus ID="LoginStatus2" style="text-transform:uppercase;" class="cool-link"  runat="server" />    </a> </li>
+
+                        
+                               
+                                   
+                                      
+                               
+
+                                  
+
+                            
 
 							</ul>
 						</div>
@@ -267,7 +280,7 @@
 
             <!-- Book -->
             
-        <form id="form1" runat="server">
+     
 
             <section class="book">
                 <div class="Bookcontainer flex">

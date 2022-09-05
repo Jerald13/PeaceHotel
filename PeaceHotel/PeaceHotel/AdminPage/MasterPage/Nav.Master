@@ -153,9 +153,9 @@
 
                         <li class="submenu"><a href="#"><i class="fe fe-eye"></i><span>Role </span></a>
                             <ul class="submenu_class" style="display: none;">
-                                <li><a href="report-shiping.aspx">Add User To Role</a></li>
-                                <li><a href="report-sales.aspx">Create Role</a></li>
-                                <li><a href="report-customerService.aspx">Manage Role</a></li>
+                                       <li><a href="addUserToRole.aspx">Add User To Role</a></li>
+                                <li><a href="UsersAndRoles.aspx">Users And Roles</a></li>
+                                <li><a href="ManageRoles.aspx">Manage Role</a></li>
                             </ul>
                         </li>
 

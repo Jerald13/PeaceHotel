@@ -153,15 +153,18 @@
                                 <a href="UserProfile.aspx"> <button class="AccButton">VIEW PROFILE</button></a>
                                
                             </div>
-                              <p class="HeadText">PRECE PLACE</p>
+                              <p class="HeadText">PEACE PLACE</p>
                             <ul>
 
-                                <li><a class="cool-link" href="Login.aspx">LOGIN PAGE</a></li>
+                                           <%if (System.Web.HttpContext.Current.User.IsInRole("Admin")) { %>
+
                                 <li><a class="cool-link" href="../../AdminPage/add-product.aspx">ADMIN PAGE</a></li>
+                                <% } %>
                                 <li><a class="cool-link" href="bookedRooms.aspx">BOOKED ROOMS</a></li>
                                 <li><a class="cool-link" href="saved.aspx">SAVED ROOMS</a></li>
-                                <li><a class="cool-link" href="ForgetPassword.aspx">CHANGE PASSWORD</a></li>
-                                <li><a class="cool-link" href="#">LOGOUT</a></li>
+                                <li><a class="cool-link" href="Profile/ForgetPassword.aspx">CHANGE PASSWORD</a></li>
+                                <li><a class="cool-link" style="text-transform:uppercase;" href="#">LOGOUT</a></li>
+                        
                         
 
           

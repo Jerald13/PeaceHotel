@@ -40,7 +40,7 @@ input#ContentPlaceHolder1_CreateUserWizard1_CompleteStepContainer_ContinueButton
 }
      </style>
 
-     <asp:CreateUserWizard ID="CreateUserWizard1" runat="server" ContinueDestinationPageUrl="~/UserPage/Login.aspx.cs">
+     <asp:CreateUserWizard ID="CreateUserWizard1" runat="server" ContinueDestinationPageUrl="~/UserPage/Login.aspx.cs" OnCreatedUser="CreateUserWizard1_CreatedUser1">
          <WizardSteps>
              <asp:CreateUserWizardStep ID="CreateUserWizardStep1" runat="server">
              </asp:CreateUserWizardStep>

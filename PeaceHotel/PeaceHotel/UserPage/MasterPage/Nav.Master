@@ -46,11 +46,13 @@
     <p>Convid-19 Update <span style="display:inline;"><a href="#" style="display:inline;text-decoration: underline;">Detail</a></span></p>
 </div> -->
 
+
+
 <body id="top">
 
     
             
-   <% bool val1 = (System.Web.HttpContext.Current.User != null) && System.Web.HttpContext.Current.User.Identity.IsAuthenticated;   %>
+   <% bool val1 = (System.Web.HttpContext.Current.User != null) && System.Web.HttpContext.Current.User.Identity.IsAuthenticated;    %>
 
 
 
@@ -71,7 +73,7 @@
             <nav class="navbar" data-navbar>
 
                 <div class="navbar-top">
-                   <a href="Home.aspx" class="logo">Peace</a>
+                   <a href="../../UserPage/UserProfile" class="logo">Peace</a>
                        <%--<img src="./assets/images/PeaceLogo.png" class="logo" alt="Acc">--%>
                     
                     <button class="nav-close-btn" aria-label="Close Menu" data-nav-close-btn>
@@ -103,9 +105,9 @@
                                     <li class="navbar-item">
                                         <a href="#services" class="navbar-link" data-navbar-link><span id="navText">EDIT PROFILE</span></a>
                                     </li>
-                                     <li class="navbar-item">
+                          <%--           <li class="navbar-item">
                                         <a href="#services" class="navbar-link" data-navbar-link><span id="navText">ADMIN PAGE</span></a>
-                                    </li>
+                                    </li>--%>
                                      <li class="navbar-item">
                                         <a href="#services" class="navbar-link" data-navbar-link><span id="navText">BOOKED ROOMS</span></a>
                                     </li>
@@ -149,7 +151,7 @@
 				          <li class="navbar-item">
                         <a href="login.aspx" class="navbar-link" data-navbar-link><span id="navText">LOGIN</span></a>
                     </li>
-                    <% } %>
+                    <% }%>
 					
 					<div class="dd_menu">
 						<div class"space" style="content="";height=30px;" >
@@ -161,15 +163,24 @@
                                 <a href="UserProfile.aspx"> <button class="AccButton">VIEW PROFILE</button></a>
                                
                             </div>
-                              <p class="HeadText">PRECE PLACE</p>
+                              <p class="HeadText">PEACE PLACE</p>
                             <ul>
 
-                                <li><a class="cool-link" href="Login.aspx">LOGIN PAGE</a></li>
+
+                                      <form id="form1" runat="server">
+
+
+<%--                                <li><a class="cool-link" href="Login.aspx">LOGIN PAGE</a></li>--%>
+
+                                <%if (System.Web.HttpContext.Current.User.IsInRole("Admin")) { %>
+
                                 <li><a class="cool-link" href="../../AdminPage/add-product.aspx">ADMIN PAGE</a></li>
-                                <li><a class="cool-link" href="bookedRooms.aspx">BOOKED ROOMS</a></li>
-                                <li><a class="cool-link" href="saved.aspx">SAVED ROOMS</a></li>
-                                <li><a class="cool-link" href="ForgetPassword.aspx">CHANGE PASSWORD</a></li>
-                                <li><a class="cool-link" href="#">LOGOUT</a></li>
+                                <% } %>
+                                <li><a class="cool-link" href="../../UserPage/bookedRooms.aspx">BOOKED ROOMS</a></li>
+                                <li><a class="cool-link" href="../../UserPage/saved.aspx">SAVED ROOMS</a></li>
+                                <li><a class="cool-link" href="../../UserPage/Profile/ForgetPassword.aspx">CHANGE PASSWORD</a></li>
+                                <li><a class="cool-link" href="#" >  <asp:LoginStatus ID="LoginStatus2" style="text-transform:uppercase;" class="cool-link"  runat="server" />    </a> </li>
+
                         
 
           
@@ -196,12 +207,12 @@
 
             </nav>
 
-            <a href="Home.aspx">
+            <a href="../../UserPage/Home.aspx">
                 <%--<img src="./assets/images/PeaceLogo.png" class="logo" alt="Acc">--%>
                <h1 class="logo">Peace</h1>
             </a>
 
-            <a href="Rooms.aspx" class="btn">
+            <a href="../../UserPage/Rooms.aspx" class="btn">
                 <!-- <ion-icon name="chevron-forward-outline" aria-hidden="true"></ion-icon> -->
 
                 <span>Book Now</span>
@@ -233,8 +244,7 @@
 
             <!-- Book -->
             
-        <form id="form1" runat="server">
-
+  
           
 
       
@@ -296,7 +306,7 @@
                     </li>
 
                     <li>
-                        <a href="#" class="footer-link">Home</a>
+                        <a href="../Home.aspx" class="footer-link">Home</a>
                     </li>
 
                     <li>

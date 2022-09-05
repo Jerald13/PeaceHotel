@@ -31,7 +31,7 @@
     margin-left: 684px;
 }
        </style>
-                      <asp:Login ID="Login1" runat="server" Width="471px" ForeColor="Black" Height="145px" DestinationPageUrl="~/UserPage/Home.aspx">
+                      <asp:Login ID="Login1" runat="server" Width="471px" ForeColor="Black" Height="145px" DestinationPageUrl="~/UserPage/Home.aspx" OnLoggedIn="Login1_LoggedIn">
                       </asp:Login>
 
  <%--           <asp:Login ID="Login2" runat="server" OnLoggedIn="Login1_LoggedIn" OnLoggingIn="Login1_LoggingIn" >

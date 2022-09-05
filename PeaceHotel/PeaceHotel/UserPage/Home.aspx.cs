@@ -23,5 +23,9 @@ namespace PeaceHotel
         {
 
         }
+        protected void accBtnCliked(object sender, EventArgs e)
+        {
+            Response.Redirect("Profile/UserProfile.aspx");
+        }
     }
 }
